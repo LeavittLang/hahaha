@@ -1,5 +1,5 @@
 Analysis & Synthesis report for A2
-Mon Nov 13 16:26:16 2017
+Tue Nov 14 14:08:12 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 13 16:26:16 2017            ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 14 14:08:12 2017            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; A2                                               ;
-; Top-level Entity Name              ; A2-74273                                         ;
+; Top-level Entity Name              ; A274181c                                         ;
 ; Family                             ; Cyclone IV GX                                    ;
-; Total logic elements               ; 101                                              ;
-;     Total combinational functions  ; 69                                               ;
-;     Dedicated logic registers      ; 32                                               ;
-; Total registers                    ; 32                                               ;
-; Total pins                         ; 62                                               ;
+; Total logic elements               ; 72                                               ;
+;     Total combinational functions  ; 72                                               ;
+;     Dedicated logic registers      ; 0                                                ;
+; Total registers                    ; 0                                                ;
+; Total pins                         ; 55                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0                                                ;
 ; Embedded Multiplier 9-bit elements ; 0                                                ;
@@ -67,7 +67,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; A2-74273           ; A2                 ;
+; Top-level entity name                                                      ; A274181c           ; A2                 ;
 ; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -153,30 +153,26 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                              ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+---------+
-; A2-74273.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/electric circle/A2/A2-74273.bdf                        ;         ;
-; A2-74181.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/electric circle/A2/A2-74181.bdf                        ;         ;
-; 74244.bdf                        ; yes             ; Megafunction                       ; d:/quartus ii/quartus/libraries/others/maxplus2/74244.bdf ;         ;
-; 74181.bdf                        ; yes             ; Megafunction                       ; d:/quartus ii/quartus/libraries/others/maxplus2/74181.bdf ;         ;
-; 74182.bdf                        ; yes             ; Megafunction                       ; d:/quartus ii/quartus/libraries/others/maxplus2/74182.bdf ;         ;
-; 74273.bdf                        ; yes             ; Megafunction                       ; d:/quartus ii/quartus/libraries/others/maxplus2/74273.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                           ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
+; A274181c.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/logic/hahaha/A2/A274181c.bdf                        ;         ;
+; 74181.bdf                        ; yes             ; Megafunction                       ; c:/quartus/quartus/libraries/others/maxplus2/74181.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -184,32 +180,26 @@ applicable agreement for further details.
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 62               ;
+; I/O pins                 ; 55               ;
 ; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; CLRN~input       ;
-; Maximum fan-out          ; 32               ;
-; Total fan-out            ; 437              ;
-; Average fan-out          ; 1.94             ;
+; Maximum fan-out node     ; S3~input         ;
+; Maximum fan-out          ; 16               ;
+; Total fan-out            ; 344              ;
+; Average fan-out          ; 1.89             ;
 +--------------------------+------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                     ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------+--------------+
-; |A2-74273                  ; 69 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 62   ; 0            ; |A2-74273                           ; work         ;
-;    |74273:inst1|           ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2-74273|74273:inst1               ; work         ;
-;    |74273:inst2|           ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2-74273|74273:inst2               ; work         ;
-;    |74273:inst3|           ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2-74273|74273:inst3               ; work         ;
-;    |74273:inst4|           ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2-74273|74273:inst4               ; work         ;
-;    |A2-74181:inst|         ; 69 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2-74273|A2-74181:inst             ; work         ;
-;       |74181:inst6|        ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2-74273|A2-74181:inst|74181:inst6 ; work         ;
-;       |74181:inst7|        ; 20 (20)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2-74273|A2-74181:inst|74181:inst7 ; work         ;
-;       |74181:inst8|        ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2-74273|A2-74181:inst|74181:inst8 ; work         ;
-;       |74181:inst|         ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2-74273|A2-74181:inst|74181:inst  ; work         ;
-;       |74182:inst4|        ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2-74273|A2-74181:inst|74182:inst4 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                       ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
+; |A274181c                  ; 72 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 55   ; 0            ; |A274181c             ; work         ;
+;    |74181:inst6|           ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A274181c|74181:inst6 ; work         ;
+;    |74181:inst7|           ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A274181c|74181:inst7 ; work         ;
+;    |74181:inst8|           ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A274181c|74181:inst8 ; work         ;
+;    |74181:inst|            ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A274181c|74181:inst  ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -218,10 +208,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 32    ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -233,7 +223,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -243,53 +233,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Mon Nov 13 16:26:13 2017
+    Info: Processing started: Tue Nov 14 14:08:10 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off A2 -c A2
-Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
-Info (12021): Found 1 design units, including 1 entities, in source file a2-74273.bdf
-    Info (12023): Found entity 1: A2-74273
-Info (12021): Found 1 design units, including 1 entities, in source file a2-74181.bdf
-    Info (12023): Found entity 1: A2-74181
-Info (12127): Elaborating entity "A2-74273" for the top level hierarchy
-Warning (275043): Pin "F0O" is missing source
-Warning (275043): Pin "F1O" is missing source
-Warning (275043): Pin "F2O" is missing source
-Warning (275043): Pin "F3O" is missing source
-Warning (275043): Pin "F4O" is missing source
-Warning (275043): Pin "F5O" is missing source
-Warning (275043): Pin "F6O" is missing source
-Warning (275043): Pin "F7O" is missing source
-Info (12128): Elaborating entity "74244" for hierarchy "74244:inst9"
-Info (12130): Elaborated megafunction instantiation "74244:inst9"
-Info (12128): Elaborating entity "A2-74181" for hierarchy "A2-74181:inst"
-Info (12128): Elaborating entity "74181" for hierarchy "A2-74181:inst|74181:inst"
-Info (12130): Elaborated megafunction instantiation "A2-74181:inst|74181:inst"
-Info (12128): Elaborating entity "74182" for hierarchy "A2-74181:inst|74182:inst4"
-Info (12130): Elaborated megafunction instantiation "A2-74181:inst|74182:inst4"
-Info (12128): Elaborating entity "74273" for hierarchy "74273:inst1"
-Info (12130): Elaborated megafunction instantiation "74273:inst1"
-Info (13014): Ignored 46 buffer(s)
-    Info (13019): Ignored 46 SOFT buffer(s)
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "F0O" is stuck at GND
-    Warning (13410): Pin "F1O" is stuck at GND
-    Warning (13410): Pin "F2O" is stuck at GND
-    Warning (13410): Pin "F3O" is stuck at GND
-    Warning (13410): Pin "F4O" is stuck at GND
-    Warning (13410): Pin "F5O" is stuck at GND
-    Warning (13410): Pin "F6O" is stuck at GND
-    Warning (13410): Pin "F7O" is stuck at GND
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file a274181.bdf
+    Info (12023): Found entity 1: A274181
+Info (12021): Found 1 design units, including 1 entities, in source file a274273.bdf
+    Info (12023): Found entity 1: A274273
+Info (12021): Found 1 design units, including 1 entities, in source file a274181c.bdf
+    Info (12023): Found entity 1: A274181c
+Info (12021): Found 1 design units, including 1 entities, in source file a274273m.bdf
+    Info (12023): Found entity 1: A274273m
+Info (12021): Found 1 design units, including 1 entities, in source file a274181b.bdf
+    Info (12023): Found entity 1: A274181b
+Info (12127): Elaborating entity "A274181c" for the top level hierarchy
+Info (12128): Elaborating entity "74181" for hierarchy "74181:inst8"
+Info (12130): Elaborated megafunction instantiation "74181:inst8"
+Info (13014): Ignored 60 buffer(s)
+    Info (13019): Ignored 60 SOFT buffer(s)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 163 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 42 input pins
-    Info (21059): Implemented 20 output pins
-    Info (21061): Implemented 101 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 554 megabytes
-    Info: Processing ended: Mon Nov 13 16:26:16 2017
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+Info (21057): Implemented 127 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 38 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 72 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 536 megabytes
+    Info: Processing ended: Tue Nov 14 14:08:12 2017
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
