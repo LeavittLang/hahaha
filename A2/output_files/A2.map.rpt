@@ -1,5 +1,5 @@
 Analysis & Synthesis report for A2
-Tue Nov 14 14:08:12 2017
+Tue Nov 14 14:57:08 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 14 14:08:12 2017            ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 14 14:57:08 2017            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; A2                                               ;
 ; Top-level Entity Name              ; A274181c                                         ;
@@ -170,7 +170,7 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                           ; Library ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
-; A274181c.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/logic/hahaha/A2/A274181c.bdf                        ;         ;
+; src/A274181c.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/logic/hahaha/A2/src/A274181c.bdf                    ;         ;
 ; 74181.bdf                        ; yes             ; Megafunction                       ; c:/quartus/quartus/libraries/others/maxplus2/74181.bdf ;         ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
 
@@ -233,19 +233,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Nov 14 14:08:10 2017
+    Info: Processing started: Tue Nov 14 14:57:06 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off A2 -c A2
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
-Info (12021): Found 1 design units, including 1 entities, in source file a274181.bdf
-    Info (12023): Found entity 1: A274181
-Info (12021): Found 1 design units, including 1 entities, in source file a274273.bdf
-    Info (12023): Found entity 1: A274273
-Info (12021): Found 1 design units, including 1 entities, in source file a274181c.bdf
-    Info (12023): Found entity 1: A274181c
-Info (12021): Found 1 design units, including 1 entities, in source file a274273m.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file a2b_1.0.0.bdf
+    Info (12023): Found entity 1: A2b_1.0.0
+Info (12021): Found 1 design units, including 1 entities, in source file src/a274273m.bdf
     Info (12023): Found entity 1: A274273m
-Info (12021): Found 1 design units, including 1 entities, in source file a274181b.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file src/a274181c.bdf
+    Info (12023): Found entity 1: A274181c
+Info (12021): Found 1 design units, including 1 entities, in source file src/a274181b.bdf
     Info (12023): Found entity 1: A274181b
+Info (12021): Found 1 design units, including 1 entities, in source file src/a274181.bdf
+    Info (12023): Found entity 1: A274181
 Info (12127): Elaborating entity "A274181c" for the top level hierarchy
 Info (12128): Elaborating entity "74181" for hierarchy "74181:inst8"
 Info (12130): Elaborated megafunction instantiation "74181:inst8"
@@ -260,7 +260,7 @@ Info (21057): Implemented 127 device resources after synthesis - the final resou
     Info (21061): Implemented 72 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 536 megabytes
-    Info: Processing ended: Tue Nov 14 14:08:12 2017
+    Info: Processing ended: Tue Nov 14 14:57:08 2017
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
