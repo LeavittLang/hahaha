@@ -1,5 +1,5 @@
 Flow report for A2
-Wed Nov 15 17:28:02 2017
+Wed Nov 15 20:34:29 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov 15 17:28:02 2017            ;
+; Flow Status                        ; Successful - Wed Nov 15 20:34:29 2017            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; A2                                               ;
-; Top-level Entity Name              ; A274181c                                         ;
+; Top-level Entity Name              ; A2ADD16b                                         ;
 ; Family                             ; Cyclone IV GX                                    ;
-; Total logic elements               ; 72 / 21,280 ( < 1 % )                            ;
-;     Total combinational functions  ; 72 / 21,280 ( < 1 % )                            ;
-;     Dedicated logic registers      ; 0 / 21,280 ( 0 % )                               ;
-; Total registers                    ; 0                                                ;
-; Total pins                         ; 55 / 167 ( 33 % )                                ;
+; Total logic elements               ; 76 / 21,280 ( < 1 % )                            ;
+;     Total combinational functions  ; 76 / 21,280 ( < 1 % )                            ;
+;     Dedicated logic registers      ; 32 / 21,280 ( < 1 % )                            ;
+; Total registers                    ; 32                                               ;
+; Total pins                         ; 59 / 167 ( 35 % )                                ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0 / 774,144 ( 0 % )                              ;
 ; Embedded Multiplier 9-bit elements ; 0 / 80 ( 0 % )                                   ;
@@ -68,7 +68,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/15/2017 17:27:41 ;
+; Start date & time ; 11/15/2017 20:34:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; A2                  ;
 +-------------------+---------------------+
@@ -79,17 +79,17 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 123532103479694.151073806012276 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 123532103479694.151074924411516 ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                              ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; A274181c    ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; A274181c    ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; A274181c    ; Top            ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; A2ADD16b    ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; A2ADD16b    ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; A2ADD16b    ; Top            ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --             ;
 ; SEARCH_PATH                         ; c:\logic\hahaha\a2\src          ; --            ; --          ; --             ;
 ; SEARCH_PATH                         ; c:\logic\hahaha\a2\lib          ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; A274181c                        ; A2            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; A2ADD16b                        ; A2            ; --          ; --             ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 
 
@@ -98,12 +98,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 525 MB              ; 00:00:02                           ;
-; Fitter                    ; 00:00:09     ; 1.4                     ; 1109 MB             ; 00:00:09                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 504 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 532 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 460 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:17                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 528 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:12     ; 1.1                     ; 1115 MB             ; 00:00:12                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 498 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 528 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 455 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:22     ; --                      ; --                  ; 00:00:20                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
