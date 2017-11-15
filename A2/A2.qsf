@@ -60,6 +60,7 @@ set_global_assignment -name BDF_FILE src/A274273m.bdf
 set_global_assignment -name BDF_FILE src/A274181c.bdf
 set_global_assignment -name BDF_FILE src/A274181b.bdf
 set_global_assignment -name BDF_FILE src/A274181.bdf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SEARCH_PATH "c:\\logic\\hahaha\\a2\\src"
 set_global_assignment -name SEARCH_PATH "c:\\logic\\hahaha\\a2\\lib"
+set_global_assignment -name BDF_FILE A274244_16.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
