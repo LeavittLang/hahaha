@@ -1,5 +1,5 @@
 Flow report for A2
-Wed Nov 15 20:34:29 2017
+Thu Nov 16 10:23:12 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov 15 20:34:29 2017            ;
+; Flow Status                        ; Successful - Thu Nov 16 10:23:12 2017            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; A2                                               ;
 ; Top-level Entity Name              ; A2ADD16b                                         ;
@@ -103,7 +103,15 @@ applicable agreement for further details.
 ; Assembler                 ; 00:00:03     ; 1.0                     ; 498 MB              ; 00:00:02                           ;
 ; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 528 MB              ; 00:00:03                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 455 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:22     ; --                      ; --                  ; 00:00:20                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 463 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 463 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 463 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 463 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 463 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 463 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 463 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 463 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:27     ; --                      ; --                  ; 00:00:28                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,6 +125,14 @@ applicable agreement for further details.
 ; Assembler                 ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -128,6 +144,14 @@ quartus_fit --read_settings_files=off --write_settings_files=off A2 -c A2
 quartus_asm --read_settings_files=off --write_settings_files=off A2 -c A2
 quartus_sta A2 -c A2
 quartus_eda --read_settings_files=off --write_settings_files=off A2 -c A2
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog A2 -c A2 --vector_source=C:/logic/hahaha/A2/A2ADD16c.vwf --testbench_file=./simulation/qsim/A2.vt
+quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog A2 -c A2
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog A2 -c A2 --vector_source=C:/logic/hahaha/A2/A2ADD16c.vwf --testbench_file=./simulation/qsim/A2.vt
+quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog A2 -c A2
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog A2 -c A2 --vector_source=C:/logic/hahaha/A2/A2ADD16c.vwf --testbench_file=./simulation/qsim/A2.vt
+quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog A2 -c A2
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog A2 -c A2 --vector_source=C:/logic/hahaha/A2/A2ADD16c.vwf --testbench_file=./simulation/qsim/A2.vt
+quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog A2 -c A2
 
 
 
