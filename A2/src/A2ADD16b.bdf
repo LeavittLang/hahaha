@@ -167,7 +167,7 @@ applicable agreement for further details.
 	(input)
 	(rect 40 120 208 136)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "AI[15..0]" (rect 5 0 48 12)(font "Arial" ))
+	(text "AI[15..0]" (rect 5 0 47 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -183,7 +183,7 @@ applicable agreement for further details.
 	(input)
 	(rect 32 144 200 160)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "BI[15..0]" (rect 5 0 48 12)(font "Arial" ))
+	(text "BI[15..0]" (rect 5 0 47 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -199,7 +199,7 @@ applicable agreement for further details.
 	(input)
 	(rect 40 64 208 80)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLR" (rect 5 0 28 12)(font "Arial" ))
+	(text "CLR" (rect 5 0 27 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -654,4 +654,12 @@ applicable agreement for further details.
 	(pt 824 72)
 	(pt 784 72)
 	(bus)
+)
+(connector
+	(pt 984 288)
+	(pt 1080 288)
+)
+(connector
+	(pt 984 304)
+	(pt 1080 304)
 )
