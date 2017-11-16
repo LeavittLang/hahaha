@@ -1,5 +1,5 @@
 EDA Netlist Writer report for A2
-Thu Nov 16 10:23:12 2017
+Thu Nov 16 10:33:51 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Nov 16 10:23:12 2017 ;
+; EDA Netlist Writer Status ; Successful - Thu Nov 16 10:33:51 2017 ;
 ; Revision Name             ; A2                                    ;
 ; Top-level Entity Name     ; A2ADD16b                              ;
 ; Family                    ; Cyclone IV GX                         ;
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Nov 16 10:23:12 2017
+    Info: Processing started: Thu Nov 16 10:33:50 2017
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog A2 -c A2
 Info (204019): Generated file A2.vo in folder "C:/logic/hahaha/A2/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 463 megabytes
-    Info: Processing ended: Thu Nov 16 10:23:12 2017
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Thu Nov 16 10:33:51 2017
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/16/2017 10:23:11"
+// Generated on "11/16/2017 10:33:49"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    A2ADD16b
 // 
@@ -661,13 +661,13 @@ end
 initial
 begin
 	BI[6] = 1'b0;
-	BI[6] = #630000 1'b1;
+	BI[6] = #570000 1'b1;
 end 
 // BI[ 5 ]
 initial
 begin
 	BI[5] = 1'b0;
-	BI[5] = #310000 1'b1;
+	BI[5] = #250000 1'b1;
 	BI[5] = #320000 1'b0;
 	BI[5] = #320000 1'b1;
 end 
@@ -675,7 +675,7 @@ end
 initial
 begin
 	BI[4] = 1'b0;
-	# 150000;
+	# 90000;
 	repeat(2)
 	begin
 		BI[4] = 1'b1;
@@ -689,42 +689,41 @@ end
 initial
 begin
 	BI[3] = 1'b0;
-	# 70000;
-	repeat(5)
+	# 10000;
+	repeat(6)
 	begin
 		BI[3] = 1'b1;
 		BI[3] = #80000 1'b0;
 		# 80000;
 	end
 	BI[3] = 1'b1;
-	BI[3] = #80000 1'b0;
 end 
 // BI[ 2 ]
 initial
 begin
-	BI[2] = 1'b0;
-	# 30000;
+	BI[2] = 1'b1;
+	# 10000;
 	repeat(12)
 	begin
-		BI[2] = 1'b1;
-		BI[2] = #40000 1'b0;
+		BI[2] = 1'b0;
+		BI[2] = #40000 1'b1;
 		# 40000;
 	end
-	BI[2] = 1'b1;
+	BI[2] = 1'b0;
 end 
 // BI[ 1 ]
 initial
 begin
-	BI[1] = 1'b0;
+	BI[1] = 1'b1;
 	# 10000;
 	repeat(24)
 	begin
-		BI[1] = 1'b1;
-		BI[1] = #20000 1'b0;
+		BI[1] = 1'b0;
+		BI[1] = #20000 1'b1;
 		# 20000;
 	end
-	BI[1] = 1'b1;
-	BI[1] = #20000 1'b0;
+	BI[1] = 1'b0;
+	BI[1] = #20000 1'b1;
 end 
 // BI[ 0 ]
 always
@@ -737,7 +736,8 @@ end
 // CLKA
 initial
 begin
-	CLKA = 1'b1;
+	CLKA = 1'b0;
+	CLKA = #3000 1'b1;
 	# 3000;
 	repeat(99)
 	begin
@@ -751,8 +751,7 @@ end
 // CLKB
 initial
 begin
-	CLKB = 1'b0;
-	CLKB = #3000 1'b1;
+	CLKB = 1'b1;
 	# 3000;
 	repeat(99)
 	begin
@@ -786,7 +785,7 @@ end
 // CN
 initial
 begin
-	CN = 1'b1;
+	CN = 1'b0;
 end 
 
 // CLR
@@ -796,57 +795,27 @@ begin
 end 
 
 // S3
-always
+initial
 begin
 	S3 = 1'b0;
-	S3 = #400000 1'b1;
-	S3 = #400000 1'b0;
-	#200000;
 end 
 
 // S2
-always
+initial
 begin
 	S2 = 1'b0;
-	S2 = #200000 1'b1;
-	S2 = #200000 1'b0;
-	S2 = #200000 1'b1;
-	S2 = #200000 1'b0;
-	#200000;
 end 
 
 // S1
-always
+initial
 begin
 	S1 = 1'b0;
-	S1 = #100000 1'b1;
-	# 100000;
-	repeat(3)
-	begin
-		S1 = 1'b0;
-		S1 = #100000 1'b1;
-		# 100000;
-	end
-	S1 = 1'b0;
-	S1 = #100000 1'b1;
-	#100000;
 end 
 
 // S0
-always
+initial
 begin
 	S0 = 1'b0;
-	S0 = #50000 1'b1;
-	# 50000;
-	repeat(8)
-	begin
-		S0 = 1'b0;
-		S0 = #50000 1'b1;
-		# 50000;
-	end
-	S0 = 1'b0;
-	S0 = #50000 1'b1;
-	#50000;
 end 
 
 A2ADD16b_vlg_sample_tst tb_sample (
