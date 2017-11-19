@@ -1,47 +1,45 @@
-|A2ADD16b
-CN4 <= A274181b:inst.CN4
-S0 => A274181b:inst.S0
-S1 => A274181b:inst.S1
-S2 => A274181b:inst.S2
-S3 => A274181b:inst.S3
-CN => A274181b:inst.CN
-M => A274181b:inst.M
-CLR => A274273m:inst7.CLRN
-CLR => A274273m:inst8.CLRN
-CLKA => A274273m:inst7.CLK
-AI[0] => A274273m:inst7.D[0]
-AI[1] => A274273m:inst7.D[1]
-AI[2] => A274273m:inst7.D[2]
-AI[3] => A274273m:inst7.D[3]
-AI[4] => A274273m:inst7.D[4]
-AI[5] => A274273m:inst7.D[5]
-AI[6] => A274273m:inst7.D[6]
-AI[7] => A274273m:inst7.D[7]
-AI[8] => A274273m:inst7.D[8]
-AI[9] => A274273m:inst7.D[9]
-AI[10] => A274273m:inst7.D[10]
-AI[11] => A274273m:inst7.D[11]
-AI[12] => A274273m:inst7.D[12]
-AI[13] => A274273m:inst7.D[13]
-AI[14] => A274273m:inst7.D[14]
-AI[15] => A274273m:inst7.D[15]
-CLKB => A274273m:inst8.CLK
-BI[0] => A274273m:inst8.D[0]
-BI[1] => A274273m:inst8.D[1]
-BI[2] => A274273m:inst8.D[2]
-BI[3] => A274273m:inst8.D[3]
-BI[4] => A274273m:inst8.D[4]
-BI[5] => A274273m:inst8.D[5]
-BI[6] => A274273m:inst8.D[6]
-BI[7] => A274273m:inst8.D[7]
-BI[8] => A274273m:inst8.D[8]
-BI[9] => A274273m:inst8.D[9]
-BI[10] => A274273m:inst8.D[10]
-BI[11] => A274273m:inst8.D[11]
-BI[12] => A274273m:inst8.D[12]
-BI[13] => A274273m:inst8.D[13]
-BI[14] => A274273m:inst8.D[14]
-BI[15] => A274273m:inst8.D[15]
+|A2ADD16c
+CN4 <= A274181c:inst.CN4
+S0 => A274181c:inst.S0
+S1 => A274181c:inst.S1
+S2 => A274181c:inst.S2
+S3 => A274181c:inst.S3
+CN => A274181c:inst.CN
+M => A274181c:inst.M
+CLKA => A274273m:inst3.CLK
+AI[0] => A274273m:inst3.D[0]
+AI[1] => A274273m:inst3.D[1]
+AI[2] => A274273m:inst3.D[2]
+AI[3] => A274273m:inst3.D[3]
+AI[4] => A274273m:inst3.D[4]
+AI[5] => A274273m:inst3.D[5]
+AI[6] => A274273m:inst3.D[6]
+AI[7] => A274273m:inst3.D[7]
+AI[8] => A274273m:inst3.D[8]
+AI[9] => A274273m:inst3.D[9]
+AI[10] => A274273m:inst3.D[10]
+AI[11] => A274273m:inst3.D[11]
+AI[12] => A274273m:inst3.D[12]
+AI[13] => A274273m:inst3.D[13]
+AI[14] => A274273m:inst3.D[14]
+AI[15] => A274273m:inst3.D[15]
+CLKB => A274273m:inst4.CLK
+BI[0] => A274273m:inst4.D[0]
+BI[1] => A274273m:inst4.D[1]
+BI[2] => A274273m:inst4.D[2]
+BI[3] => A274273m:inst4.D[3]
+BI[4] => A274273m:inst4.D[4]
+BI[5] => A274273m:inst4.D[5]
+BI[6] => A274273m:inst4.D[6]
+BI[7] => A274273m:inst4.D[7]
+BI[8] => A274273m:inst4.D[8]
+BI[9] => A274273m:inst4.D[9]
+BI[10] => A274273m:inst4.D[10]
+BI[11] => A274273m:inst4.D[11]
+BI[12] => A274273m:inst4.D[12]
+BI[13] => A274273m:inst4.D[13]
+BI[14] => A274273m:inst4.D[14]
+BI[15] => A274273m:inst4.D[15]
 Fo[0] <= A274244_16:inst6.Y[0]
 Fo[1] <= A274244_16:inst6.Y[1]
 Fo[2] <= A274244_16:inst6.Y[2]
@@ -61,131 +59,80 @@ Fo[15] <= A274244_16:inst6.Y[15]
 ALUBUS => A274244_16:inst6.GN
 
 
-|A2ADD16b|A274181b:inst
-PN <= 74182:inst5.PN
-B[0] => 74181:inst9.B0N
-B[1] => 74181:inst9.B1N
-B[2] => 74181:inst9.B2N
-B[3] => 74181:inst9.B3N
-B[4] => 74181:inst10.B0N
-B[5] => 74181:inst10.B1N
-B[6] => 74181:inst10.B2N
-B[7] => 74181:inst10.B3N
-B[8] => 74181:inst11.B0N
-B[9] => 74181:inst11.B1N
-B[10] => 74181:inst11.B2N
-B[11] => 74181:inst11.B3N
-B[12] => 74181:inst12.B0N
-B[13] => 74181:inst12.B1N
-B[14] => 74181:inst12.B2N
-B[15] => 74181:inst12.B3N
-A[0] => 74181:inst9.A0N
-A[1] => 74181:inst9.A1N
-A[2] => 74181:inst9.A2N
-A[3] => 74181:inst9.A3N
-A[4] => 74181:inst10.A0N
-A[5] => 74181:inst10.A1N
-A[6] => 74181:inst10.A2N
-A[7] => 74181:inst10.A3N
-A[8] => 74181:inst11.A0N
-A[9] => 74181:inst11.A1N
-A[10] => 74181:inst11.A2N
-A[11] => 74181:inst11.A3N
-A[12] => 74181:inst12.A0N
-A[13] => 74181:inst12.A1N
-A[14] => 74181:inst12.A2N
-A[15] => 74181:inst12.A3N
-M => 74181:inst10.M
-M => 74181:inst9.M
-M => 74181:inst11.M
-M => 74181:inst12.M
-S2 => 74181:inst10.S2
-S2 => 74181:inst9.S2
-S2 => 74181:inst11.S2
-S2 => 74181:inst12.S2
-S1 => 74181:inst10.S1
-S1 => 74181:inst9.S1
-S1 => 74181:inst11.S1
-S1 => 74181:inst12.S1
-S0 => 74181:inst10.S0
-S0 => 74181:inst9.S0
-S0 => 74181:inst11.S0
-S0 => 74181:inst12.S0
-S3 => 74181:inst10.S3
-S3 => 74181:inst9.S3
-S3 => 74181:inst11.S3
-S3 => 74181:inst12.S3
-CN => 74181:inst9.CN
-CN => 74182:inst5.CI
-GN <= 74182:inst5.GN
-CN4 <= 74181:inst12.CN4
-F[0] <= 74181:inst9.F0N
-F[1] <= 74181:inst9.F1N
-F[2] <= 74181:inst9.F2N
-F[3] <= 74181:inst9.F3N
-F[4] <= 74181:inst10.F0N
-F[5] <= 74181:inst10.F1N
-F[6] <= 74181:inst10.F2N
-F[7] <= 74181:inst10.F3N
-F[8] <= 74181:inst11.F0N
-F[9] <= 74181:inst11.F1N
-F[10] <= 74181:inst11.F2N
-F[11] <= 74181:inst11.F3N
-F[12] <= 74181:inst12.F0N
-F[13] <= 74181:inst12.F1N
-F[14] <= 74181:inst12.F2N
-F[15] <= 74181:inst12.F3N
+|A2ADD16c|A274181c:inst
+CN4 <= 74181:inst8.CN4
+B[0] => 74181:inst.B0N
+B[1] => 74181:inst.B1N
+B[2] => 74181:inst.B2N
+B[3] => 74181:inst.B3N
+B[4] => 74181:inst6.B0N
+B[5] => 74181:inst6.B1N
+B[6] => 74181:inst6.B2N
+B[7] => 74181:inst6.B3N
+B[8] => 74181:inst7.B0N
+B[9] => 74181:inst7.B1N
+B[10] => 74181:inst7.B2N
+B[11] => 74181:inst7.B3N
+B[12] => 74181:inst8.B0N
+B[13] => 74181:inst8.B1N
+B[14] => 74181:inst8.B2N
+B[15] => 74181:inst8.B3N
+A[0] => 74181:inst.A0N
+A[1] => 74181:inst.A1N
+A[2] => 74181:inst.A2N
+A[3] => 74181:inst.A3N
+A[4] => 74181:inst6.A0N
+A[5] => 74181:inst6.A1N
+A[6] => 74181:inst6.A2N
+A[7] => 74181:inst6.A3N
+A[8] => 74181:inst7.A0N
+A[9] => 74181:inst7.A1N
+A[10] => 74181:inst7.A2N
+A[11] => 74181:inst7.A3N
+A[12] => 74181:inst8.A0N
+A[13] => 74181:inst8.A1N
+A[14] => 74181:inst8.A2N
+A[15] => 74181:inst8.A3N
+M => 74181:inst8.M
+M => 74181:inst7.M
+M => 74181:inst6.M
+M => 74181:inst.M
+CN => 74181:inst.CN
+S2 => 74181:inst.S2
+S2 => 74181:inst6.S2
+S2 => 74181:inst7.S2
+S2 => 74181:inst8.S2
+S1 => 74181:inst.S1
+S1 => 74181:inst6.S1
+S1 => 74181:inst7.S1
+S1 => 74181:inst8.S1
+S0 => 74181:inst.S0
+S0 => 74181:inst6.S0
+S0 => 74181:inst7.S0
+S0 => 74181:inst8.S0
+S3 => 74181:inst.S3
+S3 => 74181:inst6.S3
+S3 => 74181:inst7.S3
+S3 => 74181:inst8.S3
+F[0] <= 74181:inst.F0N
+F[1] <= 74181:inst.F1N
+F[2] <= 74181:inst.F2N
+F[3] <= 74181:inst.F3N
+F[4] <= 74181:inst6.F0N
+F[5] <= 74181:inst6.F1N
+F[6] <= 74181:inst6.F2N
+F[7] <= 74181:inst6.F3N
+F[8] <= 74181:inst7.F0N
+F[9] <= 74181:inst7.F1N
+F[10] <= 74181:inst7.F2N
+F[11] <= 74181:inst7.F3N
+F[12] <= 74181:inst8.F0N
+F[13] <= 74181:inst8.F1N
+F[14] <= 74181:inst8.F2N
+F[15] <= 74181:inst8.F3N
 
 
-|A2ADD16b|A274181b:inst|74182:inst5
-GN <= 24.DB_MAX_OUTPUT_PORT_TYPE
-GN3 => 11.IN0
-GN3 => 12.IN2
-GN3 => 13.IN2
-GN3 => 14.IN1
-GN2 => 11.IN1
-GN2 => 12.IN1
-GN2 => 13.IN0
-GN2 => 15.IN0
-GN2 => 16.IN0
-GN2 => 17.IN2
-GN2 => 18.IN0
-GN1 => 11.IN2
-GN1 => 12.IN3
-GN1 => 15.IN1
-GN1 => 16.IN2
-GN1 => 17.IN0
-GN1 => 21.IN0
-GN1 => 20.IN2
-GN1 => 19.IN1
-GN0 => 11.IN3
-GN0 => 15.IN2
-GN0 => 16.IN3
-GN0 => 20.IN0
-GN0 => 19.IN2
-GN0 => 22.IN0
-GN0 => 23.IN0
-PN1 => 12.IN0
-PN1 => 10.IN2
-PN1 => 17.IN1
-PN1 => 21.IN1
-PN2 => 13.IN1
-PN2 => 10.IN1
-PN2 => 18.IN1
-PN3 => 14.IN0
-PN3 => 10.IN0
-PN <= 10.DB_MAX_OUTPUT_PORT_TYPE
-PN0 => 10.IN3
-PN0 => 16.IN1
-PN0 => 20.IN1
-PN0 => 23.IN1
-CZ <= 27.DB_MAX_OUTPUT_PORT_TYPE
-CI => 33.IN0
-CY <= 29.DB_MAX_OUTPUT_PORT_TYPE
-CX <= 31.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|A2ADD16b|A274181b:inst|74181:inst10
+|A2ADD16c|A274181c:inst|74181:inst8
 F1N <= 86.DB_MAX_OUTPUT_PORT_TYPE
 A1N => 14.IN0
 A1N => 13.IN2
@@ -244,7 +191,7 @@ GN <= 63.DB_MAX_OUTPUT_PORT_TYPE
 F0N <= 87.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|A2ADD16b|A274181b:inst|74181:inst9
+|A2ADD16c|A274181c:inst|74181:inst7
 F1N <= 86.DB_MAX_OUTPUT_PORT_TYPE
 A1N => 14.IN0
 A1N => 13.IN2
@@ -303,7 +250,7 @@ GN <= 63.DB_MAX_OUTPUT_PORT_TYPE
 F0N <= 87.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|A2ADD16b|A274181b:inst|74181:inst11
+|A2ADD16c|A274181c:inst|74181:inst6
 F1N <= 86.DB_MAX_OUTPUT_PORT_TYPE
 A1N => 14.IN0
 A1N => 13.IN2
@@ -362,7 +309,7 @@ GN <= 63.DB_MAX_OUTPUT_PORT_TYPE
 F0N <= 87.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|A2ADD16b|A274181b:inst|74181:inst12
+|A2ADD16c|A274181c:inst|74181:inst
 F1N <= 86.DB_MAX_OUTPUT_PORT_TYPE
 A1N => 14.IN0
 A1N => 13.IN2
@@ -421,7 +368,7 @@ GN <= 63.DB_MAX_OUTPUT_PORT_TYPE
 F0N <= 87.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|A2ADD16b|A274273m:inst7
+|A2ADD16c|A274273m:inst3
 Q[0] <= 74273:inst1.Q1
 Q[1] <= 74273:inst1.Q2
 Q[2] <= 74273:inst1.Q3
@@ -456,11 +403,9 @@ D[14] => 74273:inst2.D7
 D[15] => 74273:inst2.D8
 CLK => 74273:inst1.CLK
 CLK => 74273:inst2.CLK
-CLRN => 74273:inst1.CLRN
-CLRN => 74273:inst2.CLRN
 
 
-|A2ADD16b|A274273m:inst7|74273:inst1
+|A2ADD16c|A274273m:inst3|74273:inst1
 Q1 <= 19.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 19.ACLR
 CLRN => 18.ACLR
@@ -495,7 +440,7 @@ Q8 <= 12.DB_MAX_OUTPUT_PORT_TYPE
 D8 => 12.DATAIN
 
 
-|A2ADD16b|A274273m:inst7|74273:inst2
+|A2ADD16c|A274273m:inst3|74273:inst2
 Q1 <= 19.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 19.ACLR
 CLRN => 18.ACLR
@@ -530,7 +475,7 @@ Q8 <= 12.DB_MAX_OUTPUT_PORT_TYPE
 D8 => 12.DATAIN
 
 
-|A2ADD16b|A274273m:inst8
+|A2ADD16c|A274273m:inst4
 Q[0] <= 74273:inst1.Q1
 Q[1] <= 74273:inst1.Q2
 Q[2] <= 74273:inst1.Q3
@@ -565,11 +510,9 @@ D[14] => 74273:inst2.D7
 D[15] => 74273:inst2.D8
 CLK => 74273:inst1.CLK
 CLK => 74273:inst2.CLK
-CLRN => 74273:inst1.CLRN
-CLRN => 74273:inst2.CLRN
 
 
-|A2ADD16b|A274273m:inst8|74273:inst1
+|A2ADD16c|A274273m:inst4|74273:inst1
 Q1 <= 19.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 19.ACLR
 CLRN => 18.ACLR
@@ -604,7 +547,7 @@ Q8 <= 12.DB_MAX_OUTPUT_PORT_TYPE
 D8 => 12.DATAIN
 
 
-|A2ADD16b|A274273m:inst8|74273:inst2
+|A2ADD16c|A274273m:inst4|74273:inst2
 Q1 <= 19.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 19.ACLR
 CLRN => 18.ACLR
@@ -639,7 +582,7 @@ Q8 <= 12.DB_MAX_OUTPUT_PORT_TYPE
 D8 => 12.DATAIN
 
 
-|A2ADD16b|A274244_16:inst6
+|A2ADD16c|A274244_16:inst6
 Y[0] <= 74244:inst.1Y1
 Y[1] <= 74244:inst.1Y2
 Y[2] <= 74244:inst.1Y3
@@ -678,7 +621,7 @@ GN => 74244:inst1.1GN
 GN => 74244:inst1.2GN
 
 
-|A2ADD16b|A274244_16:inst6|74244:inst
+|A2ADD16c|A274244_16:inst6|74244:inst
 2Y4 <= 26.DB_MAX_OUTPUT_PORT_TYPE
 2A4 => 26.DATAIN
 2GN => 33.IN0
@@ -699,7 +642,7 @@ GN => 74244:inst1.2GN
 1A4 => 11.DATAIN
 
 
-|A2ADD16b|A274244_16:inst6|74244:inst1
+|A2ADD16c|A274244_16:inst6|74244:inst1
 2Y4 <= 26.DB_MAX_OUTPUT_PORT_TYPE
 2A4 => 26.DATAIN
 2GN => 33.IN0

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for A2
-Thu Nov 16 10:29:51 2017
+Sun Nov 19 22:44:56 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 16 10:29:51 2017            ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 19 22:44:56 2017            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; A2                                               ;
-; Top-level Entity Name              ; A2ADD16b                                         ;
+; Top-level Entity Name              ; A2ADD16c                                         ;
 ; Family                             ; Cyclone IV GX                                    ;
-; Total logic elements               ; 108                                              ;
-;     Total combinational functions  ; 76                                               ;
+; Total logic elements               ; 104                                              ;
+;     Total combinational functions  ; 72                                               ;
 ;     Dedicated logic registers      ; 32                                               ;
 ; Total registers                    ; 32                                               ;
-; Total pins                         ; 59                                               ;
+; Total pins                         ; 58                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0                                                ;
 ; Embedded Multiplier 9-bit elements ; 0                                                ;
@@ -67,7 +67,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; A2ADD16b           ; A2                 ;
+; Top-level entity name                                                      ; A2ADD16c           ; A2                 ;
 ; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -171,10 +171,9 @@ applicable agreement for further details.
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                           ; Library ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
 ; src/A274273m.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/logic/hahaha/A2/src/A274273m.bdf                    ;         ;
-; src/A274181b.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/logic/hahaha/A2/src/A274181b.bdf                    ;         ;
+; src/A274181c.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/logic/hahaha/A2/src/A274181c.bdf                    ;         ;
 ; A274244_16.bdf                   ; yes             ; User Block Diagram/Schematic File  ; c:/logic/hahaha/a2/src/A274244_16.bdf                  ;         ;
-; src/A2ADD16b.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/logic/hahaha/A2/src/A2ADD16b.bdf                    ;         ;
-; 74182.bdf                        ; yes             ; Megafunction                       ; c:/quartus/quartus/libraries/others/maxplus2/74182.bdf ;         ;
+; src/A2ADD16c.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/logic/hahaha/A2/src/A2ADD16c.bdf                    ;         ;
 ; 74181.bdf                        ; yes             ; Megafunction                       ; c:/quartus/quartus/libraries/others/maxplus2/74181.bdf ;         ;
 ; 74273.bdf                        ; yes             ; Megafunction                       ; c:/quartus/quartus/libraries/others/maxplus2/74273.bdf ;         ;
 ; 74244.bdf                        ; yes             ; Megafunction                       ; c:/quartus/quartus/libraries/others/maxplus2/74244.bdf ;         ;
@@ -186,12 +185,12 @@ applicable agreement for further details.
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 59               ;
+; I/O pins                 ; 58               ;
 ; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; CLR~input        ;
-; Maximum fan-out          ; 32               ;
-; Total fan-out            ; 470              ;
-; Average fan-out          ; 2.08             ;
+; Maximum fan-out node     ; S3~input         ;
+; Maximum fan-out          ; 16               ;
+; Total fan-out            ; 427              ;
+; Average fan-out          ; 1.94             ;
 +--------------------------+------------------+
 
 
@@ -200,19 +199,18 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------+--------------+
-; |A2ADD16b                  ; 76 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 59   ; 0            ; |A2ADD16b                            ; work         ;
-;    |A274181b:inst|         ; 76 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16b|A274181b:inst              ; work         ;
-;       |74181:inst10|       ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16b|A274181b:inst|74181:inst10 ; work         ;
-;       |74181:inst11|       ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16b|A274181b:inst|74181:inst11 ; work         ;
-;       |74181:inst12|       ; 19 (19)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16b|A274181b:inst|74181:inst12 ; work         ;
-;       |74181:inst9|        ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16b|A274181b:inst|74181:inst9  ; work         ;
-;       |74182:inst5|        ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16b|A274181b:inst|74182:inst5  ; work         ;
-;    |A274273m:inst7|        ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16b|A274273m:inst7             ; work         ;
-;       |74273:inst1|        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16b|A274273m:inst7|74273:inst1 ; work         ;
-;       |74273:inst2|        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16b|A274273m:inst7|74273:inst2 ; work         ;
-;    |A274273m:inst8|        ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16b|A274273m:inst8             ; work         ;
-;       |74273:inst1|        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16b|A274273m:inst8|74273:inst1 ; work         ;
-;       |74273:inst2|        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16b|A274273m:inst8|74273:inst2 ; work         ;
+; |A2ADD16c                  ; 72 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 58   ; 0            ; |A2ADD16c                            ; work         ;
+;    |A274181c:inst|         ; 72 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16c|A274181c:inst              ; work         ;
+;       |74181:inst6|        ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16c|A274181c:inst|74181:inst6  ; work         ;
+;       |74181:inst7|        ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16c|A274181c:inst|74181:inst7  ; work         ;
+;       |74181:inst8|        ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16c|A274181c:inst|74181:inst8  ; work         ;
+;       |74181:inst|         ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16c|A274181c:inst|74181:inst   ; work         ;
+;    |A274273m:inst3|        ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16c|A274273m:inst3             ; work         ;
+;       |74273:inst1|        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16c|A274273m:inst3|74273:inst1 ; work         ;
+;       |74273:inst2|        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16c|A274273m:inst3|74273:inst2 ; work         ;
+;    |A274273m:inst4|        ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16c|A274273m:inst4             ; work         ;
+;       |74273:inst1|        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16c|A274273m:inst4|74273:inst1 ; work         ;
+;       |74273:inst2|        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |A2ADD16c|A274273m:inst4|74273:inst2 ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -225,7 +223,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total registers                              ; 32    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -247,7 +245,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Nov 16 10:29:49 2017
+    Info: Processing started: Sun Nov 19 22:44:53 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off A2 -c A2
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Warning (12019): Can't analyze file -- file A2b_1.0.0.bdf is missing
@@ -265,15 +263,13 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/a2a
     Info (12023): Found entity 1: A2ADD16b
 Info (12021): Found 1 design units, including 1 entities, in source file src/a2add16c.bdf
     Info (12023): Found entity 1: A2ADD16c
-Info (12127): Elaborating entity "A2ADD16b" for the top level hierarchy
-Info (12128): Elaborating entity "A274181b" for hierarchy "A274181b:inst"
-Info (12128): Elaborating entity "74182" for hierarchy "A274181b:inst|74182:inst5"
-Info (12130): Elaborated megafunction instantiation "A274181b:inst|74182:inst5"
-Info (12128): Elaborating entity "74181" for hierarchy "A274181b:inst|74181:inst10"
-Info (12130): Elaborated megafunction instantiation "A274181b:inst|74181:inst10"
-Info (12128): Elaborating entity "A274273m" for hierarchy "A274273m:inst7"
-Info (12128): Elaborating entity "74273" for hierarchy "A274273m:inst7|74273:inst1"
-Info (12130): Elaborated megafunction instantiation "A274273m:inst7|74273:inst1"
+Info (12127): Elaborating entity "A2ADD16c" for the top level hierarchy
+Info (12128): Elaborating entity "A274181c" for hierarchy "A274181c:inst"
+Info (12128): Elaborating entity "74181" for hierarchy "A274181c:inst|74181:inst8"
+Info (12130): Elaborated megafunction instantiation "A274181c:inst|74181:inst8"
+Info (12128): Elaborating entity "A274273m" for hierarchy "A274273m:inst3"
+Info (12128): Elaborating entity "74273" for hierarchy "A274273m:inst3|74273:inst1"
+Info (12130): Elaborated megafunction instantiation "A274273m:inst3|74273:inst1"
 Info (12128): Elaborating entity "A274244_16" for hierarchy "A274244_16:inst6"
 Info (12128): Elaborating entity "74244" for hierarchy "A274244_16:inst6|74244:inst"
 Info (12130): Elaborated megafunction instantiation "A274244_16:inst6|74244:inst"
@@ -282,14 +278,14 @@ Info (13014): Ignored 60 buffer(s)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 167 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 42 input pins
+Info (21057): Implemented 162 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 41 input pins
     Info (21059): Implemented 17 output pins
-    Info (21061): Implemented 108 logic cells
+    Info (21061): Implemented 104 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 536 megabytes
-    Info: Processing ended: Thu Nov 16 10:29:51 2017
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Sun Nov 19 22:44:56 2017
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

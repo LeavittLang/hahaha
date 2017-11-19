@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Nov 16 10:29:51 2017
+Analysis & Synthesis Status : Successful - Sun Nov 19 22:44:56 2017
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : A2
-Top-level Entity Name : A2ADD16b
+Top-level Entity Name : A2ADD16c
 Family : Cyclone IV GX
-Total logic elements : 108
-    Total combinational functions : 76
+Total logic elements : 104
+    Total combinational functions : 72
     Dedicated logic registers : 32
 Total registers : 32
-Total pins : 59
+Total pins : 58
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

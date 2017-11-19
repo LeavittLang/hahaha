@@ -1,5 +1,5 @@
 Assembler report for A2
-Thu Nov 16 10:30:07 2017
+Sun Nov 19 22:45:10 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -37,9 +37,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Nov 16 10:30:07 2017 ;
+; Assembler Status      ; Successful - Sun Nov 19 22:45:10 2017 ;
 ; Revision Name         ; A2                                    ;
-; Top-level Entity Name ; A2ADD16b                              ;
+; Top-level Entity Name ; A2ADD16c                              ;
 ; Family                ; Cyclone IV GX                         ;
 ; Device                ; EP4CGX22CF19C6                        ;
 +-----------------------+---------------------------------------+
@@ -92,8 +92,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                         ;
 +----------------+-------------------------------------------------+
 ; Device         ; EP4CGX22CF19C6                                  ;
-; JTAG usercode  ; 0x0017DC91                                      ;
-; Checksum       ; 0x0017DC91                                      ;
+; JTAG usercode  ; 0x0017D4B2                                      ;
+; Checksum       ; 0x0017D4B2                                      ;
 +----------------+-------------------------------------------------+
 
 
@@ -103,13 +103,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Nov 16 10:30:05 2017
+    Info: Processing started: Sun Nov 19 22:45:08 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off A2 -c A2
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 498 megabytes
-    Info: Processing ended: Thu Nov 16 10:30:07 2017
+    Info: Processing ended: Sun Nov 19 22:45:10 2017
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

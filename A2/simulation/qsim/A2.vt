@@ -18,21 +18,20 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/16/2017 10:33:49"
+// Generated on "11/19/2017 22:52:16"
                                                                         
-// Verilog Self-Checking Test Bench (with test vectors) for design :    A2ADD16b
+// Verilog Self-Checking Test Bench (with test vectors) for design :    A2ADD16c
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module A2ADD16b_vlg_sample_tst(
+module A2ADD16c_vlg_sample_tst(
 	AI,
 	ALUBUS,
 	BI,
 	CLKA,
 	CLKB,
-	CLR,
 	CN,
 	M,
 	S0,
@@ -46,7 +45,6 @@ input  ALUBUS;
 input [15:0] BI;
 input  CLKA;
 input  CLKB;
-input  CLR;
 input  CN;
 input  M;
 input  S0;
@@ -57,7 +55,7 @@ output sampler_tx;
 
 reg sample;
 time current_time;
-always @(AI or ALUBUS or BI or CLKA or CLKB or CLR or CN or M or S0 or S1 or S2 or S3)
+always @(AI or ALUBUS or BI or CLKA or CLKB or CN or M or S0 or S1 or S2 or S3)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -76,7 +74,7 @@ end
 assign sampler_tx = sample;
 endmodule
 
-module A2ADD16b_vlg_check_tst (
+module A2ADD16c_vlg_check_tst (
 	CN4,
 	Fo,
 	sampler_rx
@@ -467,7 +465,7 @@ $finish;
 end 
 endmodule
 
-module A2ADD16b_vlg_vec_tst();
+module A2ADD16c_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg [15:0] AI;
@@ -475,7 +473,6 @@ reg ALUBUS;
 reg [15:0] BI;
 reg CLKA;
 reg CLKB;
-reg CLR;
 reg CN;
 reg M;
 reg S0;
@@ -489,14 +486,13 @@ wire [15:0] Fo;
 wire sampler;                             
 
 // assign statements (if any)                          
-A2ADD16b i1 (
+A2ADD16c i1 (
 // port map - connection between master ports and signals/registers   
 	.AI(AI),
 	.ALUBUS(ALUBUS),
 	.BI(BI),
 	.CLKA(CLKA),
 	.CLKB(CLKB),
-	.CLR(CLR),
 	.CN(CN),
 	.CN4(CN4),
 	.Fo(Fo),
@@ -506,6 +502,42 @@ A2ADD16b i1 (
 	.S2(S2),
 	.S3(S3)
 );
+
+// S3
+initial
+begin
+	S3 = 1'b0;
+end 
+
+// S2
+initial
+begin
+	S2 = 1'b0;
+end 
+
+// S1
+initial
+begin
+	S1 = 1'b0;
+end 
+
+// S0
+initial
+begin
+	S0 = 1'b0;
+end 
+
+// M
+initial
+begin
+	M = 1'b0;
+end 
+
+// CN
+initial
+begin
+	CN = 1'b0;
+end 
 // AI[ 15 ]
 initial
 begin
@@ -555,62 +587,47 @@ end
 initial
 begin
 	AI[6] = 1'b0;
-	AI[6] = #640000 1'b1;
 end 
 // AI[ 5 ]
 initial
 begin
 	AI[5] = 1'b0;
-	AI[5] = #320000 1'b1;
-	AI[5] = #320000 1'b0;
-	AI[5] = #320000 1'b1;
 end 
 // AI[ 4 ]
 initial
 begin
-	repeat(3)
-	begin
-		AI[4] = 1'b0;
-		AI[4] = #160000 1'b1;
-		# 160000;
-	end
 	AI[4] = 1'b0;
 end 
 // AI[ 3 ]
 initial
 begin
-	repeat(6)
-	begin
-		AI[3] = 1'b0;
-		AI[3] = #80000 1'b1;
-		# 80000;
-	end
 	AI[3] = 1'b0;
+	AI[3] = #800000 1'b1;
 end 
 // AI[ 2 ]
 initial
 begin
-	repeat(12)
-	begin
-		AI[2] = 1'b0;
-		AI[2] = #40000 1'b1;
-		# 40000;
-	end
 	AI[2] = 1'b0;
+	AI[2] = #400000 1'b1;
+	AI[2] = #400000 1'b0;
 end 
 // AI[ 1 ]
-always
+initial
 begin
+	repeat(2)
+	begin
+		AI[1] = 1'b0;
+		AI[1] = #200000 1'b1;
+		# 200000;
+	end
 	AI[1] = 1'b0;
-	AI[1] = #20000 1'b1;
-	#20000;
 end 
 // AI[ 0 ]
 always
 begin
 	AI[0] = 1'b0;
-	AI[0] = #10000 1'b1;
-	#10000;
+	AI[0] = #100000 1'b1;
+	#100000;
 end 
 // BI[ 15 ]
 initial
@@ -661,89 +678,59 @@ end
 initial
 begin
 	BI[6] = 1'b0;
-	BI[6] = #570000 1'b1;
 end 
 // BI[ 5 ]
 initial
 begin
 	BI[5] = 1'b0;
-	BI[5] = #250000 1'b1;
-	BI[5] = #320000 1'b0;
-	BI[5] = #320000 1'b1;
 end 
 // BI[ 4 ]
 initial
 begin
 	BI[4] = 1'b0;
-	# 90000;
-	repeat(2)
-	begin
-		BI[4] = 1'b1;
-		BI[4] = #160000 1'b0;
-		# 160000;
-	end
-	BI[4] = 1'b1;
-	BI[4] = #160000 1'b0;
+	BI[4] = #800000 1'b1;
 end 
 // BI[ 3 ]
 initial
 begin
 	BI[3] = 1'b0;
-	# 10000;
-	repeat(6)
-	begin
-		BI[3] = 1'b1;
-		BI[3] = #80000 1'b0;
-		# 80000;
-	end
-	BI[3] = 1'b1;
+	BI[3] = #400000 1'b1;
+	BI[3] = #400000 1'b0;
 end 
 // BI[ 2 ]
 initial
 begin
-	BI[2] = 1'b1;
-	# 10000;
-	repeat(12)
+	repeat(2)
 	begin
 		BI[2] = 1'b0;
-		BI[2] = #40000 1'b1;
-		# 40000;
+		BI[2] = #200000 1'b1;
+		# 200000;
 	end
 	BI[2] = 1'b0;
 end 
 // BI[ 1 ]
-initial
-begin
-	BI[1] = 1'b1;
-	# 10000;
-	repeat(24)
-	begin
-		BI[1] = 1'b0;
-		BI[1] = #20000 1'b1;
-		# 20000;
-	end
-	BI[1] = 1'b0;
-	BI[1] = #20000 1'b1;
-end 
-// BI[ 0 ]
 always
 begin
+	BI[1] = 1'b0;
+	BI[1] = #100000 1'b1;
+	#100000;
+end 
+// BI[ 0 ]
+initial
+begin
 	BI[0] = 1'b1;
-	BI[0] = #10000 1'b0;
-	#10000;
 end 
 
 // CLKA
 initial
 begin
-	CLKA = 1'b0;
-	CLKA = #3000 1'b1;
-	# 3000;
-	repeat(99)
+	CLKA = 1'b1;
+	# 33000;
+	repeat(9)
 	begin
 		CLKA = 1'b0;
-		CLKA = #7000 1'b1;
-		# 3000;
+		CLKA = #67000 1'b1;
+		# 33000;
 	end
 	CLKA = 1'b0;
 end 
@@ -751,13 +738,14 @@ end
 // CLKB
 initial
 begin
-	CLKB = 1'b1;
-	# 3000;
-	repeat(99)
+	CLKB = 1'b0;
+	CLKB = #33000 1'b1;
+	# 33000;
+	repeat(9)
 	begin
 		CLKB = 1'b0;
-		CLKB = #7000 1'b1;
-		# 3000;
+		CLKB = #67000 1'b1;
+		# 33000;
 	end
 	CLKB = 1'b0;
 end 
@@ -766,65 +754,22 @@ end
 initial
 begin
 	ALUBUS = 1'b1;
-	# 6000;
-	repeat(99)
+	# 66000;
+	repeat(9)
 	begin
 		ALUBUS = 1'b0;
-		ALUBUS = #4000 1'b1;
-		# 6000;
+		ALUBUS = #34000 1'b1;
+		# 66000;
 	end
 	ALUBUS = 1'b0;
 end 
 
-// M
-initial
-begin
-	M = 1'b0;
-end 
-
-// CN
-initial
-begin
-	CN = 1'b0;
-end 
-
-// CLR
-initial
-begin
-	CLR = 1'b1;
-end 
-
-// S3
-initial
-begin
-	S3 = 1'b0;
-end 
-
-// S2
-initial
-begin
-	S2 = 1'b0;
-end 
-
-// S1
-initial
-begin
-	S1 = 1'b0;
-end 
-
-// S0
-initial
-begin
-	S0 = 1'b0;
-end 
-
-A2ADD16b_vlg_sample_tst tb_sample (
+A2ADD16c_vlg_sample_tst tb_sample (
 	.AI(AI),
 	.ALUBUS(ALUBUS),
 	.BI(BI),
 	.CLKA(CLKA),
 	.CLKB(CLKB),
-	.CLR(CLR),
 	.CN(CN),
 	.M(M),
 	.S0(S0),
@@ -834,7 +779,7 @@ A2ADD16b_vlg_sample_tst tb_sample (
 	.sampler_tx(sampler)
 );
 
-A2ADD16b_vlg_check_tst tb_out(
+A2ADD16c_vlg_check_tst tb_out(
 	.CN4(CN4),
 	.Fo(Fo),
 	.sampler_rx(sampler)

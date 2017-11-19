@@ -20,10 +20,10 @@ TNS   : -19.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLKA'
 Slack : -3.000
-TNS   : -19.406
+TNS   : -19.374
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLKB'
 Slack : -3.000
-TNS   : -19.405
+TNS   : -19.374
 
 ------------------------------------------------------------

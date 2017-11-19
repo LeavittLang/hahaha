@@ -2,20 +2,20 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module A2ADD16b
+# -- Compiling module A2ADD16c
 # 
 # Top level modules:
-# 	A2ADD16b
+# 	A2ADD16c
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module A2ADD16b_vlg_sample_tst
-# -- Compiling module A2ADD16b_vlg_check_tst
-# -- Compiling module A2ADD16b_vlg_vec_tst
+# -- Compiling module A2ADD16c_vlg_sample_tst
+# -- Compiling module A2ADD16c_vlg_check_tst
+# -- Compiling module A2ADD16c_vlg_vec_tst
 # 
 # Top level modules:
-# 	A2ADD16b_vlg_vec_tst
-# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.A2ADD16b_vlg_vec_tst 
-# Loading work.A2ADD16b_vlg_vec_tst
-# Loading work.A2ADD16b
+# 	A2ADD16c_vlg_vec_tst
+# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.A2ADD16c_vlg_vec_tst 
+# Loading work.A2ADD16c_vlg_vec_tst
+# Loading work.A2ADD16c
 # Loading cycloneiv_ver.cycloneiv_lcell_comb
 # Loading cycloneiv_ver.cycloneiv_io_ibuf
 # Loading cycloneiv_ver.cycloneiv_clkctrl
@@ -23,9 +23,9 @@
 # Loading cycloneiv_ver.cycloneiv_ena_reg
 # Loading cycloneiv_ver.cycloneiv_io_obuf
 # Loading altera_ver.dffeas
-# Loading work.A2ADD16b_vlg_sample_tst
-# Loading work.A2ADD16b_vlg_check_tst
+# Loading work.A2ADD16c_vlg_sample_tst
+# Loading work.A2ADD16c_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
 # Simulation passed !
-# ** Note: $finish    : A2.vt(466)
-#    Time: 1 us  Iteration: 0  Instance: /A2ADD16b_vlg_vec_tst/tb_out
+# ** Note: $finish    : A2.vt(464)
+#    Time: 1 us  Iteration: 0  Instance: /A2ADD16c_vlg_vec_tst/tb_out
