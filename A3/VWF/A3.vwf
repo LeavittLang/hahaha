@@ -28,7 +28,7 @@ HEADER
 	DATA_DURATION = 1000.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
-	GRID_PERIOD = 10.0;
+	GRID_PERIOD = 5.0;
 	GRID_DUTY_CYCLE = 50;
 }
 
@@ -594,7 +594,15 @@ TRANSITION_LIST("CLK")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 0.5;
+		LEVEL 1 FOR 40.0;
+		NODE
+		{
+			REPEAT = 19;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 40.0;
+		}
+		LEVEL 0 FOR 9.5;
 	}
 }
 
@@ -684,8 +692,7 @@ TRANSITION_LIST("dataIn[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 620.0;
-		LEVEL 1 FOR 380.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -694,10 +701,7 @@ TRANSITION_LIST("dataIn[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 300.0;
-		LEVEL 1 FOR 320.0;
-		LEVEL 0 FOR 320.0;
-		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -706,15 +710,8 @@ TRANSITION_LIST("dataIn[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 140.0;
-		NODE
-		{
-			REPEAT = 2;
-			LEVEL 1 FOR 160.0;
-			LEVEL 0 FOR 160.0;
-		}
-		LEVEL 1 FOR 160.0;
-		LEVEL 0 FOR 60.0;
+		LEVEL 0 FOR 500.0;
+		LEVEL 1 FOR 500.0;
 	}
 }
 
@@ -723,15 +720,10 @@ TRANSITION_LIST("dataIn[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 60.0;
-		NODE
-		{
-			REPEAT = 5;
-			LEVEL 1 FOR 80.0;
-			LEVEL 0 FOR 80.0;
-		}
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 60.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 400.0;
+		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 100.0;
 	}
 }
 
@@ -740,14 +732,14 @@ TRANSITION_LIST("dataIn[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 100.0;
 		NODE
 		{
-			REPEAT = 12;
-			LEVEL 1 FOR 40.0;
-			LEVEL 0 FOR 40.0;
+			REPEAT = 2;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 200.0;
 		}
-		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 100.0;
 	}
 }
 
@@ -758,9 +750,9 @@ TRANSITION_LIST("dataIn[1]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 25;
-			LEVEL 1 FOR 20.0;
-			LEVEL 0 FOR 20.0;
+			REPEAT = 5;
+			LEVEL 1 FOR 100.0;
+			LEVEL 0 FOR 100.0;
 		}
 	}
 }
@@ -772,9 +764,9 @@ TRANSITION_LIST("dataIn[0]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 50;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
+			REPEAT = 10;
+			LEVEL 0 FOR 50.0;
+			LEVEL 1 FOR 50.0;
 		}
 	}
 }
@@ -928,12 +920,15 @@ TRANSITION_LIST("GN")
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 25.0;
 		NODE
 		{
-			REPEAT = 200;
-			LEVEL 0 FOR 2.5;
-			LEVEL 1 FOR 2.5;
+			REPEAT = 19;
+			LEVEL 0 FOR 25.0;
+			LEVEL 1 FOR 25.0;
 		}
+		LEVEL 0 FOR 24.0;
 	}
 }
 
@@ -942,12 +937,15 @@ TRANSITION_LIST("inclock")
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 25.0;
 		NODE
 		{
-			REPEAT = 100;
-			LEVEL 0 FOR 5.0;
-			LEVEL 1 FOR 5.0;
+			REPEAT = 19;
+			LEVEL 0 FOR 25.0;
+			LEVEL 1 FOR 25.0;
 		}
+		LEVEL 0 FOR 24.0;
 	}
 }
 
@@ -956,14 +954,15 @@ TRANSITION_LIST("outclock")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 5.0;
+		LEVEL 1 FOR 1.0;
 		NODE
 		{
-			REPEAT = 99;
-			LEVEL 0 FOR 5.0;
-			LEVEL 1 FOR 5.0;
+			REPEAT = 19;
+			LEVEL 0 FOR 25.0;
+			LEVEL 1 FOR 25.0;
 		}
-		LEVEL 0 FOR 5.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 24.0;
 	}
 }
 
@@ -972,12 +971,15 @@ TRANSITION_LIST("wren")
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 25.0;
 		NODE
 		{
-			REPEAT = 100;
-			LEVEL 0 FOR 5.0;
-			LEVEL 1 FOR 5.0;
+			REPEAT = 19;
+			LEVEL 0 FOR 25.0;
+			LEVEL 1 FOR 25.0;
 		}
+		LEVEL 0 FOR 24.0;
 	}
 }
 

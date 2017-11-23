@@ -103,7 +103,7 @@ applicable agreement for further details.
 	(input)
 	(rect -40 312 128 328)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 27 12)(font "Arial" ))
+	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -119,7 +119,7 @@ applicable agreement for further details.
 	(input)
 	(rect -16 376 152 392)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "inclock" (rect 5 0 40 12)(font "Arial" ))
+	(text "inclock" (rect 5 0 39 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -306,7 +306,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 256 272 400 368)
+	(rect 264 272 408 368)
 	(text "A274273m" (rect 5 0 66 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
@@ -385,10 +385,6 @@ applicable agreement for further details.
 	(pt 656 400)
 )
 (connector
-	(pt 192 320)
-	(pt 256 320)
-)
-(connector
 	(pt 80 608)
 	(pt 656 608)
 )
@@ -405,26 +401,6 @@ applicable agreement for further details.
 	(pt 80 648)
 )
 (connector
-	(pt 240 304)
-	(pt 256 304)
-	(bus)
-)
-(connector
-	(pt 672 304)
-	(pt 400 304)
-	(bus)
-)
-(connector
-	(pt 464 528)
-	(pt 392 528)
-	(bus)
-)
-(connector
-	(pt 104 528)
-	(pt 264 528)
-	(bus)
-)
-(connector
 	(pt 192 320)
 	(pt 192 544)
 )
@@ -433,18 +409,41 @@ applicable agreement for further details.
 	(pt 152 384)
 )
 (connector
-	(pt 1192 304)
-	(pt 1096 304)
-	(bus)
-)
-(connector
-	(pt 952 304)
-	(pt 888 304)
-	(bus)
-)
-(connector
-	(text "<<__$DEF_ALIAS49>>" (rect 160 296 272 308)(font "Arial" )(invisible))
 	(pt 128 320)
 	(pt 192 320)
+)
+(connector
+	(pt 192 320)
+	(pt 264 320)
+)
+(connector
+	(pt 888 304)
+	(pt 952 304)
+	(bus)
+)
+(connector
+	(pt 1096 304)
+	(pt 1192 304)
+	(bus)
+)
+(connector
+	(pt 240 304)
+	(pt 264 304)
+	(bus)
+)
+(connector
+	(pt 408 304)
+	(pt 672 304)
+	(bus)
+)
+(connector
+	(pt 104 528)
+	(pt 264 528)
+	(bus)
+)
+(connector
+	(pt 392 528)
+	(pt 464 528)
+	(bus)
 )
 (junction (pt 192 320))

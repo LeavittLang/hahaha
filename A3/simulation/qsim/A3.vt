@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/23/2017 12:28:40"
+// Generated on "11/23/2017 16:34:07"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    A3
 // 
@@ -504,6 +504,14 @@ end
 initial
 begin
 	CLK = 1'b1;
+	# 40000;
+	repeat(19)
+	begin
+		CLK = 1'b0;
+		CLK = #10000 1'b1;
+		# 40000;
+	end
+	CLK = 1'b0;
 end 
 // dataIn[ 15 ]
 initial
@@ -554,108 +562,112 @@ end
 initial
 begin
 	dataIn[6] = 1'b0;
-	dataIn[6] = #620000 1'b1;
 end 
 // dataIn[ 5 ]
 initial
 begin
 	dataIn[5] = 1'b0;
-	dataIn[5] = #300000 1'b1;
-	dataIn[5] = #320000 1'b0;
-	dataIn[5] = #320000 1'b1;
 end 
 // dataIn[ 4 ]
 initial
 begin
 	dataIn[4] = 1'b0;
-	# 140000;
-	repeat(2)
-	begin
-		dataIn[4] = 1'b1;
-		dataIn[4] = #160000 1'b0;
-		# 160000;
-	end
-	dataIn[4] = 1'b1;
-	dataIn[4] = #160000 1'b0;
+	dataIn[4] = #500000 1'b1;
 end 
 // dataIn[ 3 ]
 initial
 begin
 	dataIn[3] = 1'b0;
-	# 60000;
-	repeat(5)
-	begin
-		dataIn[3] = 1'b1;
-		dataIn[3] = #80000 1'b0;
-		# 80000;
-	end
-	dataIn[3] = 1'b1;
-	dataIn[3] = #80000 1'b0;
+	dataIn[3] = #100000 1'b1;
+	dataIn[3] = #400000 1'b0;
+	dataIn[3] = #400000 1'b1;
 end 
 // dataIn[ 2 ]
 initial
 begin
-	dataIn[2] = 1'b0;
-	# 20000;
-	repeat(12)
-	begin
-		dataIn[2] = 1'b1;
-		dataIn[2] = #40000 1'b0;
-		# 40000;
-	end
 	dataIn[2] = 1'b1;
+	# 100000;
+	repeat(2)
+	begin
+		dataIn[2] = 1'b0;
+		dataIn[2] = #200000 1'b1;
+		# 200000;
+	end
+	dataIn[2] = 1'b0;
 end 
 // dataIn[ 1 ]
 always
 begin
 	dataIn[1] = 1'b1;
-	dataIn[1] = #20000 1'b0;
-	#20000;
+	dataIn[1] = #100000 1'b0;
+	#100000;
 end 
 // dataIn[ 0 ]
 always
 begin
 	dataIn[0] = 1'b0;
-	dataIn[0] = #10000 1'b1;
-	#10000;
+	dataIn[0] = #50000 1'b1;
+	#50000;
 end 
 
 // GN
-always
+initial
 begin
 	GN = 1'b0;
-	GN = #2500 1'b1;
-	#2500;
+	GN = #1000 1'b1;
+	# 25000;
+	repeat(19)
+	begin
+		GN = 1'b0;
+		GN = #25000 1'b1;
+		# 25000;
+	end
+	GN = 1'b0;
 end 
 
 // inclock
-always
+initial
 begin
 	inclock = 1'b0;
-	inclock = #5000 1'b1;
-	#5000;
+	inclock = #1000 1'b1;
+	# 25000;
+	repeat(19)
+	begin
+		inclock = 1'b0;
+		inclock = #25000 1'b1;
+		# 25000;
+	end
+	inclock = 1'b0;
 end 
 
 // outclock
 initial
 begin
 	outclock = 1'b1;
-	# 5000;
-	repeat(99)
+	# 1000;
+	repeat(19)
 	begin
 		outclock = 1'b0;
-		outclock = #5000 1'b1;
-		# 5000;
+		outclock = #25000 1'b1;
+		# 25000;
 	end
 	outclock = 1'b0;
+	outclock = #25000 1'b1;
 end 
 
 // wren
-always
+initial
 begin
 	wren = 1'b0;
-	wren = #5000 1'b1;
-	#5000;
+	wren = #1000 1'b1;
+	# 25000;
+	repeat(19)
+	begin
+		wren = 1'b0;
+		wren = #25000 1'b1;
+		# 25000;
+	end
+	wren = 1'b0;
 end 
 
 A3_vlg_sample_tst tb_sample (
