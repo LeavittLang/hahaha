@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\logic\hahaha\A4\simulation\qsim
+vShift_Register
+Z1 IoYT5zZ;M^X61J6fhQgkz21
+Z2 V^I5UQ7`0N2aKSz7oF]_RT0
+Z3 dC:\logic\hahaha\A4\simulation\qsim
+Z4 w1512040204
+Z5 8A4.vo
+Z6 FA4.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@shift_@register
+!i10b 1
+Z10 !s100 fOzfRb9?7hEN<5jl7200@3
+!s85 0
+Z11 !s108 1512040209.604000
+Z12 !s107 A4.vo|
+Z13 !s90 -work|work|A4.vo|
+!s101 -O0
+vShift_Register_vlg_vec_tst
+!i10b 1
+!s100 H4zBSQ3C^CCfHJJDge2K:3
+I^YTc0QM@oA_g5^Bd7?;=W3
+VS0em<kLVHL;mYkAgY@4hK0
+R3
+R4
+8A4.vt
+FA4.vt
+L0 29
+R7
+r1
+!s85 0
+31
+!s108 1512040209.873000
+!s107 A4.vt|
+!s90 -work|work|A4.vt|
+!s101 -O0
+R8
+n@shift_@register_vlg_vec_tst

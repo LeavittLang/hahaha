@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 160 112)
-	(text "74273_16" (rect 5 0 61 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(rect 16 16 160 176)
+	(text "74670_16" (rect 5 0 61 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 144 25 156)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -33,9 +33,44 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
+		(text "WE" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "WE" (rect 21 43 39 57)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "WA" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "WA" (rect 21 59 42 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "WB" (rect 0 0 20 14)(font "Arial" (font_size 8)))
+		(text "WB" (rect 21 75 41 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "RE" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "RE" (rect 21 91 36 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "RA" (rect 0 0 17 14)(font "Arial" (font_size 8)))
+		(text "RA" (rect 21 107 38 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "RB" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "RB" (rect 21 123 37 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
 	)
 	(port
 		(pt 144 32)
@@ -45,6 +80,6 @@ applicable agreement for further details.
 		(line (pt 144 32)(pt 128 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 128 80))
+		(rectangle (rect 16 16 128 144))
 	)
 )
