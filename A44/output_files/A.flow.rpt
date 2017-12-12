@@ -1,5 +1,5 @@
 Flow report for A
-Mon Dec 04 16:33:26 2017
+Mon Dec 04 19:15:48 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Mon Dec 04 16:33:26 2017            ;
+; Flow Status                        ; Successful - Mon Dec 04 19:15:48 2017            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; A                                                ;
 ; Top-level Entity Name              ; shift                                            ;
@@ -68,24 +68,27 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/04/2017 16:27:47 ;
+; Start date & time ; 12/04/2017 19:15:11 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; A                   ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                 ;
-+-------------------------------------+---------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+---------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 123532103479694.151237606613752 ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; shift       ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; shift       ; Top        ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; shift       ; Top        ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; shift                           ; A             ; --          ; --         ;
-+-------------------------------------+---------------------------------+---------------+-------------+------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                    ;
++-------------------------------------+--------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+--------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 79461739097422.151238611111684 ; --            ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                             ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)      ; <None>        ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                       ; --            ; shift       ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; shift       ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; shift       ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                   ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; shift                          ; A             ; --          ; --             ;
++-------------------------------------+--------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -93,15 +96,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 520 MB              ; 00:00:02                           ;
-; Fitter                    ; 00:00:08     ; 1.0                     ; 1077 MB             ; 00:00:08                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 503 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 499 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 463 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 463 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 463 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 463 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:16     ; --                      ; --                  ; 00:00:18                           ;
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 546 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:17     ; 1.6                     ; 1272 MB             ; 00:00:13                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 506 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 510 MB              ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 458 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:30     ; --                      ; --                  ; 00:00:22                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -110,14 +110,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-QDDHDOAA  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; LAPTOP-SSV8ASJC  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; LAPTOP-SSV8ASJC  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; LAPTOP-SSV8ASJC  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; LAPTOP-SSV8ASJC  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-SSV8ASJC  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -128,10 +125,7 @@ quartus_map --read_settings_files=on --write_settings_files=off A -c A
 quartus_fit --read_settings_files=off --write_settings_files=off A -c A
 quartus_asm --read_settings_files=off --write_settings_files=off A -c A
 quartus_sta A -c A
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog A -c A --vector_source=C:/logic/hahaha/A44/Waveform.vwf --testbench_file=./simulation/qsim/A.vt
-quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog A -c A
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog A -c A --vector_source=C:/logic/hahaha/A44/Waveform.vwf --testbench_file=./simulation/qsim/A.vt
-quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog A -c A
+quartus_eda --read_settings_files=off --write_settings_files=off A -c A
 
 
 
