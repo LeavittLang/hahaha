@@ -18,24 +18,30 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "12/12/2017 17:42:43"
+// Generated on "12/12/2017 18:51:41"
                                                                         
-// Verilog Self-Checking Test Bench (with test vectors) for design :    A2
+// Verilog Self-Checking Test Bench (with test vectors) for design :    A3
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module A2_vlg_sample_tst(
+module A3_vlg_sample_tst(
 	ALUBUS,
 	CLKA,
 	CLKB,
 	CLR,
 	CN,
+	GN,
 	io,
 	latch_clk,
 	latch_OEN,
 	M,
+	RAM_addr,
+	RAM_CLK,
+	RAM_inclock,
+	RAM_outclock,
+	RAM_wren,
 	S0,
 	S1,
 	S2,
@@ -47,10 +53,16 @@ input  CLKA;
 input  CLKB;
 input  CLR;
 input  CN;
+input  GN;
 input [15:0] io;
-input [1:0] latch_clk;
-input [1:0] latch_OEN;
+input  latch_clk;
+input  latch_OEN;
 input  M;
+input [7:0] RAM_addr;
+input  RAM_CLK;
+input  RAM_inclock;
+input  RAM_outclock;
+input  RAM_wren;
 input  S0;
 input  S1;
 input  S2;
@@ -59,7 +71,7 @@ output sampler_tx;
 
 reg sample;
 time current_time;
-always @(ALUBUS or CLKA or CLKB or CLR or CN or io or latch_clk or latch_OEN or M or S0 or S1 or S2 or S3)
+always @(ALUBUS or CLKA or CLKB or CLR or CN or GN or io or latch_clk or latch_OEN or M or RAM_addr or RAM_CLK or RAM_inclock or RAM_outclock or RAM_wren or S0 or S1 or S2 or S3)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -78,7 +90,7 @@ end
 assign sampler_tx = sample;
 endmodule
 
-module A2_vlg_check_tst (
+module A3_vlg_check_tst (
 	CN4,
 	fa,
 	fb,
@@ -981,7 +993,7 @@ $finish;
 end 
 endmodule
 
-module A2_vlg_vec_tst();
+module A3_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg ALUBUS;
@@ -989,10 +1001,16 @@ reg CLKA;
 reg CLKB;
 reg CLR;
 reg CN;
+reg GN;
 reg [15:0] treg_io;
-reg [1:0] latch_clk;
-reg [1:0] latch_OEN;
+reg latch_clk;
+reg latch_OEN;
 reg M;
+reg [7:0] RAM_addr;
+reg RAM_CLK;
+reg RAM_inclock;
+reg RAM_outclock;
+reg RAM_wren;
 reg S0;
 reg S1;
 reg S2;
@@ -1007,7 +1025,7 @@ wire sampler;
 
 // assign statements (if any)                          
 assign io = treg_io;
-A2 i1 (
+A3 i1 (
 // port map - connection between master ports and signals/registers   
 	.ALUBUS(ALUBUS),
 	.CLKA(CLKA),
@@ -1017,10 +1035,16 @@ A2 i1 (
 	.CN4(CN4),
 	.fa(fa),
 	.fb(fb),
+	.GN(GN),
 	.io(io),
 	.latch_clk(latch_clk),
 	.latch_OEN(latch_OEN),
 	.M(M),
+	.RAM_addr(RAM_addr),
+	.RAM_CLK(RAM_CLK),
+	.RAM_inclock(RAM_inclock),
+	.RAM_outclock(RAM_outclock),
+	.RAM_wren(RAM_wren),
 	.S0(S0),
 	.S1(S1),
 	.S2(S2),
@@ -1031,24 +1055,24 @@ A2 i1 (
 initial
 begin
 	ALUBUS = 1'b1;
-	ALUBUS = #180000 1'b0;
-	ALUBUS = #50000 1'b1;
+	ALUBUS = #690000 1'b0;
+	ALUBUS = #40000 1'b1;
 end 
 
 // CLKA
 initial
 begin
 	CLKA = 1'b0;
-	CLKA = #110000 1'b1;
-	CLKA = #10000 1'b0;
+	CLKA = #490000 1'b1;
+	CLKA = #40000 1'b0;
 end 
 
 // CLKB
 initial
 begin
 	CLKB = 1'b0;
-	CLKB = #150000 1'b1;
-	CLKB = #10000 1'b0;
+	CLKB = #600000 1'b1;
+	CLKB = #50000 1'b0;
 end 
 
 // CLR
@@ -1062,144 +1086,214 @@ initial
 begin
 	CN = 1'b0;
 end 
+
+// GN
+initial
+begin
+	GN = 1'b1;
+	GN = #590000 1'b0;
+	GN = #80000 1'b1;
+end 
 // io[ 15 ]
 initial
 begin
 	treg_io[15] = 1'b0;
-	treg_io[15] = #60000 1'b1;
-	treg_io[15] = #40000 1'bZ;
+	treg_io[15] = #90000 1'b1;
+	treg_io[15] = #80000 1'bZ;
 end 
 // io[ 14 ]
 initial
 begin
 	treg_io[14] = 1'b0;
-	treg_io[14] = #60000 1'b1;
-	treg_io[14] = #40000 1'bZ;
+	treg_io[14] = #170000 1'bZ;
 end 
 // io[ 13 ]
 initial
 begin
 	treg_io[13] = 1'b0;
-	treg_io[13] = #100000 1'bZ;
+	treg_io[13] = #170000 1'bZ;
 end 
 // io[ 12 ]
 initial
 begin
 	treg_io[12] = 1'b0;
-	treg_io[12] = #100000 1'bZ;
+	treg_io[12] = #170000 1'bZ;
 end 
 // io[ 11 ]
 initial
 begin
-	treg_io[11] = 1'b0;
-	treg_io[11] = #100000 1'bZ;
+	treg_io[11] = 1'b1;
+	treg_io[11] = #90000 1'b0;
+	treg_io[11] = #80000 1'bZ;
 end 
 // io[ 10 ]
 initial
 begin
 	treg_io[10] = 1'b0;
-	treg_io[10] = #100000 1'bZ;
+	treg_io[10] = #90000 1'b1;
+	treg_io[10] = #80000 1'bZ;
 end 
 // io[ 9 ]
 initial
 begin
 	treg_io[9] = 1'b1;
-	treg_io[9] = #100000 1'bZ;
+	treg_io[9] = #90000 1'b0;
+	treg_io[9] = #80000 1'bZ;
 end 
 // io[ 8 ]
 initial
 begin
-	treg_io[8] = 1'b1;
-	treg_io[8] = #100000 1'bZ;
+	treg_io[8] = 1'b0;
+	treg_io[8] = #170000 1'bZ;
 end 
 // io[ 7 ]
 initial
 begin
-	treg_io[7] = 1'b1;
-	treg_io[7] = #60000 1'b0;
-	treg_io[7] = #40000 1'bZ;
+	treg_io[7] = 1'b0;
+	treg_io[7] = #90000 1'b1;
+	treg_io[7] = #80000 1'bZ;
 end 
 // io[ 6 ]
 initial
 begin
-	treg_io[6] = 1'b0;
-	treg_io[6] = #100000 1'bZ;
+	treg_io[6] = 1'b1;
+	treg_io[6] = #90000 1'b0;
+	treg_io[6] = #80000 1'bZ;
 end 
 // io[ 5 ]
 initial
 begin
 	treg_io[5] = 1'b0;
-	treg_io[5] = #60000 1'b1;
-	treg_io[5] = #40000 1'bZ;
+	treg_io[5] = #170000 1'bZ;
 end 
 // io[ 4 ]
 initial
 begin
 	treg_io[4] = 1'b0;
-	treg_io[4] = #60000 1'b1;
-	treg_io[4] = #40000 1'bZ;
+	treg_io[4] = #90000 1'b1;
+	treg_io[4] = #80000 1'bZ;
 end 
 // io[ 3 ]
 initial
 begin
-	treg_io[3] = 1'b0;
-	treg_io[3] = #100000 1'bZ;
+	treg_io[3] = 1'b1;
+	treg_io[3] = #170000 1'bZ;
 end 
 // io[ 2 ]
 initial
 begin
 	treg_io[2] = 1'b0;
-	treg_io[2] = #100000 1'bZ;
+	treg_io[2] = #170000 1'bZ;
 end 
 // io[ 1 ]
 initial
 begin
-	treg_io[1] = 1'b1;
-	treg_io[1] = #100000 1'bZ;
+	treg_io[1] = 1'b0;
+	treg_io[1] = #170000 1'bZ;
 end 
 // io[ 0 ]
 initial
 begin
 	treg_io[0] = 1'b0;
-	treg_io[0] = #100000 1'bZ;
+	treg_io[0] = #90000 1'b1;
+	treg_io[0] = #80000 1'bZ;
 end 
-// latch_clk[ 1 ]
+
+// latch_clk
 initial
 begin
-	latch_clk[1] = 1'b0;
-	latch_clk[1] = #80000 1'b1;
-	latch_clk[1] = #10000 1'b0;
+	latch_clk = 1'b0;
+	latch_clk = #40000 1'b1;
+	latch_clk = #10000 1'b0;
+	latch_clk = #650000 1'b1;
+	latch_clk = #10000 1'b0;
 end 
-// latch_clk[ 0 ]
+
+// latch_OEN
 initial
 begin
-	latch_clk[0] = 1'b0;
-	latch_clk[0] = #10000 1'b1;
-	latch_clk[0] = #10000 1'b0;
-	latch_clk[0] = #170000 1'b1;
-	latch_clk[0] = #10000 1'b0;
-end 
-// latch_OEN[ 1 ]
-initial
-begin
-	latch_OEN[1] = 1'b1;
-	latch_OEN[1] = #140000 1'b0;
-	latch_OEN[1] = #30000 1'b1;
-end 
-// latch_OEN[ 0 ]
-initial
-begin
-	latch_OEN[0] = 1'b1;
-	latch_OEN[0] = #100000 1'b0;
-	latch_OEN[0] = #30000 1'b1;
-	latch_OEN[0] = #140000 1'b0;
-	latch_OEN[0] = #100000 1'b1;
+	latch_OEN = 1'b1;
+	latch_OEN = #460000 1'b0;
+	latch_OEN = #110000 1'b1;
+	latch_OEN = #350000 1'b0;
 end 
 
 // M
 initial
 begin
 	M = 1'b0;
+end 
+// RAM_addr[ 7 ]
+initial
+begin
+	RAM_addr[7] = 1'b0;
+end 
+// RAM_addr[ 6 ]
+initial
+begin
+	RAM_addr[6] = 1'b0;
+end 
+// RAM_addr[ 5 ]
+initial
+begin
+	RAM_addr[5] = 1'b0;
+end 
+// RAM_addr[ 4 ]
+initial
+begin
+	RAM_addr[4] = 1'b0;
+end 
+// RAM_addr[ 3 ]
+initial
+begin
+	RAM_addr[3] = 1'b0;
+end 
+// RAM_addr[ 2 ]
+initial
+begin
+	RAM_addr[2] = 1'b0;
+end 
+// RAM_addr[ 1 ]
+initial
+begin
+	RAM_addr[1] = 1'b0;
+end 
+// RAM_addr[ 0 ]
+initial
+begin
+	RAM_addr[0] = 1'b0;
+end 
+
+// RAM_CLK
+initial
+begin
+	RAM_CLK = 1'b0;
+	RAM_CLK = #100000 1'b1;
+	RAM_CLK = #30000 1'b0;
+end 
+
+// RAM_inclock
+initial
+begin
+	RAM_inclock = 1'b0;
+	RAM_inclock = #110000 1'b1;
+	RAM_inclock = #30000 1'b0;
+end 
+
+// RAM_outclock
+initial
+begin
+	RAM_outclock = 1'b0;
+	RAM_outclock = #580000 1'b1;
+	RAM_outclock = #110000 1'b0;
+end 
+
+// RAM_wren
+initial
+begin
+	RAM_wren = 1'b0;
+	RAM_wren = #110000 1'b1;
+	RAM_wren = #30000 1'b0;
 end 
 
 // S0
@@ -1226,16 +1320,22 @@ begin
 	S3 = 1'b1;
 end 
 
-A2_vlg_sample_tst tb_sample (
+A3_vlg_sample_tst tb_sample (
 	.ALUBUS(ALUBUS),
 	.CLKA(CLKA),
 	.CLKB(CLKB),
 	.CLR(CLR),
 	.CN(CN),
+	.GN(GN),
 	.io(io),
 	.latch_clk(latch_clk),
 	.latch_OEN(latch_OEN),
 	.M(M),
+	.RAM_addr(RAM_addr),
+	.RAM_CLK(RAM_CLK),
+	.RAM_inclock(RAM_inclock),
+	.RAM_outclock(RAM_outclock),
+	.RAM_wren(RAM_wren),
 	.S0(S0),
 	.S1(S1),
 	.S2(S2),
@@ -1243,7 +1343,7 @@ A2_vlg_sample_tst tb_sample (
 	.sampler_tx(sampler)
 );
 
-A2_vlg_check_tst tb_out(
+A3_vlg_check_tst tb_out(
 	.CN4(CN4),
 	.fa(fa),
 	.fb(fb),

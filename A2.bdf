@@ -183,7 +183,7 @@ applicable agreement for further details.
 	(input)
 	(rect -64 128 104 144)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLR" (rect 5 0 28 12)(font "Arial" ))
+	(text "CLR" (rect 5 0 27 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -199,7 +199,7 @@ applicable agreement for further details.
 	(input)
 	(rect -72 96 104 112)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "latch_OEN[1..0]" (rect 5 0 85 12)(font "Arial" ))
+	(text "latch_OEN[1..0]" (rect 5 0 84 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
