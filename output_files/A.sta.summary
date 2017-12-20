@@ -7,15 +7,15 @@ Slack : -1.868
 TNS   : -29.888
 
 Type  : Slow 1200mV 85C Model Setup 'shift_CLK'
-Slack : -0.382
-TNS   : -3.994
+Slack : -0.380
+TNS   : -3.979
 
 Type  : Slow 1200mV 85C Model Setup 'RAM_inclock'
-Slack : 0.086
+Slack : 0.091
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'RAM_inclock'
-Slack : 0.157
+Slack : 0.168
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'shift_CLK'
@@ -63,15 +63,15 @@ Slack : -1.584
 TNS   : -25.344
 
 Type  : Slow 1200mV 0C Model Setup 'shift_CLK'
-Slack : -0.234
-TNS   : -1.906
+Slack : -0.232
+TNS   : -1.884
 
 Type  : Slow 1200mV 0C Model Setup 'RAM_inclock'
-Slack : 0.164
+Slack : 0.168
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'RAM_inclock'
-Slack : 0.164
+Slack : 0.173
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'shift_CLK'
@@ -119,15 +119,15 @@ Slack : -0.398
 TNS   : -6.368
 
 Type  : Fast 1200mV 0C Model Setup 'shift_CLK'
-Slack : 0.231
+Slack : 0.233
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'RAM_inclock'
-Slack : 0.444
+Slack : 0.451
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'RAM_inclock'
-Slack : 0.040
+Slack : 0.045
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'shift_CLK'
@@ -152,11 +152,11 @@ TNS   : -19.400
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ADD_CLKA'
 Slack : -3.000
-TNS   : -19.382
+TNS   : -19.378
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ADD_CLKB'
 Slack : -3.000
-TNS   : -19.382
+TNS   : -19.378
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'RAM_inclock'
 Slack : -3.000

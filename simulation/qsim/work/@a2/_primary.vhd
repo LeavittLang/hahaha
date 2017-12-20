@@ -3,7 +3,6 @@ use verilog.vl_types.all;
 entity A2 is
     port(
         CN4             : out    vl_logic;
-        fa              : out    vl_logic_vector(15 downto 0);
         CLR             : in     vl_logic;
         CLKA            : in     vl_logic;
         CLKB            : in     vl_logic;
@@ -15,6 +14,7 @@ entity A2 is
         CN              : in     vl_logic;
         M               : in     vl_logic;
         io              : inout  vl_logic_vector(15 downto 0);
+        fa              : out    vl_logic_vector(15 downto 0);
         fb              : out    vl_logic_vector(15 downto 0);
         latch_OEN       : in     vl_logic_vector(1 downto 0);
         latch_clk       : in     vl_logic_vector(1 downto 0)

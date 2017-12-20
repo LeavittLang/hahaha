@@ -1,11 +1,11 @@
-Fitter Status : Successful - Tue Dec 12 19:04:35 2017
-Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Fitter Status : Successful - Mon Dec 18 09:45:26 2017
+Quartus II 32-bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : A
 Top-level Entity Name : A4
 Family : Cyclone IV GX
 Device : EP4CGX22CF19C6
 Timing Models : Final
-Total logic elements : 218 / 21,280 ( 1 % )
+Total logic elements : 217 / 21,280 ( 1 % )
     Total combinational functions : 190 / 21,280 ( < 1 % )
     Dedicated logic registers : 72 / 21,280 ( < 1 % )
 Total registers : 72

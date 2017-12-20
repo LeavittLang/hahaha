@@ -70,7 +70,7 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 CHIP  "A"  ASSIGNED TO AN: EP4CGX22CF19C6
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
@@ -252,7 +252,7 @@ GND                          : K12       : gnd    :                   :         
 VCCINT                       : K13       : power  :                   : 1.2V    :           :                
 VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
 ADD_CN                       : K15       : input  : 2.5 V             :         : 5         : N              
-RAM_addr[7]                  : K16       : input  : 2.5 V             :         : 5         : N              
+ADD_M                        : K16       : input  : 2.5 V             :         : 5         : N              
 latch_clk[1]                 : K17       : input  : 2.5 V             :         : 5         : N              
 RAM_inclock                  : K18       : input  : 2.5 V             :         : 5         : N              
 GND                          : L1        : gnd    :                   :         :           :                
@@ -269,10 +269,10 @@ GND                          : L11       : gnd    :                   :         
 VCCINT                       : L12       : power  :                   : 1.2V    :           :                
 VCCA                         : L13       : power  :                   : 2.5V    :           :                
 GND                          : L14       : gnd    :                   :         :           :                
-latch_OEN[1]                 : L15       : input  : 2.5 V             :         : 5         : N              
-ADD_M                        : L16       : input  : 2.5 V             :         : 5         : N              
+RAM_GN                       : L15       : input  : 2.5 V             :         : 5         : N              
+ADD_S0                       : L16       : input  : 2.5 V             :         : 5         : N              
 GND                          : L17       : gnd    :                   :         :           :                
-shift_S[0]                   : L18       : input  : 2.5 V             :         : 5         : N              
+RAM_addr[7]                  : L18       : input  : 2.5 V             :         : 5         : N              
 GXB_GND*                     : M1        :        :                   :         : QL0       :                
 GXB_GND*                     : M2        :        :                   :         : QL0       :                
 VCCL_GXB                     : M3        : power  :                   : 1.2V    :           :                
@@ -288,8 +288,8 @@ GND                          : M12       : gnd    :                   :         
 GND                          : M13       : gnd    :                   :         :           :                
 VCCD_PLL                     : M14       : power  :                   : 1.2V    :           :                
 VCCIO5                       : M15       : power  :                   : 2.5V    : 5         :                
-ADD_S0                       : M16       : input  : 2.5 V             :         : 5         : N              
-ADD_S1                       : M17       : input  : 2.5 V             :         : 5         : N              
+ADD_S3                       : M16       : input  : 2.5 V             :         : 5         : N              
+ADD_S2                       : M17       : input  : 2.5 V             :         : 5         : N              
 shift_S[1]                   : M18       : input  : 2.5 V             :         : 5         : N              
 GND                          : N1        : gnd    :                   :         :           :                
 GND                          : N2        : gnd    :                   :         :           :                
@@ -307,8 +307,8 @@ VCCIO4                       : N13       : power  :                   : 2.5V    
 VCCIO4                       : N14       : power  :                   : 2.5V    : 4         :                
 io[8]                        : N15       : bidir  : 2.5 V             :         : 5         : N              
 io[7]                        : N16       : bidir  : 2.5 V             :         : 5         : N              
-ADD_S3                       : N17       : input  : 2.5 V             :         : 5         : N              
-ADD_S2                       : N18       : input  : 2.5 V             :         : 5         : N              
+ADD_S1                       : N17       : input  : 2.5 V             :         : 5         : N              
+shift_S[0]                   : N18       : input  : 2.5 V             :         : 5         : N              
 GXB_NC                       : P1        :        :                   :         : QL0       :                
 GXB_NC                       : P2        :        :                   :         : QL0       :                
 GND                          : P3        : gnd    :                   :         :           :                
@@ -320,13 +320,13 @@ GND                          : P8        : gnd    :                   :         
 VCCIO3                       : P9        : power  :                   : 2.5V    : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P10       :        :                   :         : 3         :                
 GND                          : P11       : gnd    :                   :         :           :                
-RAM_addr[2]                  : P12       : input  : 2.5 V             :         : 4         : N              
-RAM_addr[5]                  : P13       : input  : 2.5 V             :         : 4         : N              
+RAM_addr[3]                  : P12       : input  : 2.5 V             :         : 4         : N              
+RAM_addr[4]                  : P13       : input  : 2.5 V             :         : 4         : N              
 GND                          : P14       : gnd    :                   :         :           :                
-RAM_addr[1]                  : P15       : input  : 2.5 V             :         : 4         : N              
+shift_GN                     : P15       : input  : 2.5 V             :         : 4         : N              
 io[9]                        : P16       : bidir  : 2.5 V             :         : 5         : N              
 GND                          : P17       : gnd    :                   :         :           :                
-io[12]                       : P18       : bidir  : 2.5 V             :         : 5         : N              
+ADD_ALUBUS                   : P18       : input  : 2.5 V             :         : 5         : N              
 GND                          : R1        : gnd    :                   :         :           :                
 GND                          : R2        : gnd    :                   :         :           :                
 GND                          : R3        : gnd    :                   :         :           :                
@@ -338,13 +338,13 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : R8        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : R9        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R10       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R11       :        :                   :         : 4         :                
-RAM_wren                     : R12       : input  : 2.5 V             :         : 4         : N              
-RAM_addr[3]                  : R13       : input  : 2.5 V             :         : 4         : N              
-shift_GN                     : R14       : input  : 2.5 V             :         : 4         : N              
-RAM_addr[6]                  : R15       : input  : 2.5 V             :         : 4         : N              
+RAM_addr[1]                  : R12       : input  : 2.5 V             :         : 4         : N              
+RAM_wren                     : R13       : input  : 2.5 V             :         : 4         : N              
+io[2]                        : R14       : bidir  : 2.5 V             :         : 4         : N              
+latch_OEN[0]                 : R15       : input  : 2.5 V             :         : 4         : N              
 io[1]                        : R16       : bidir  : 2.5 V             :         : 5         : N              
-ADD_ALUBUS                   : R17       : input  : 2.5 V             :         : 5         : N              
-io[0]                        : R18       : bidir  : 2.5 V             :         : 5         : N              
+io[0]                        : R17       : bidir  : 2.5 V             :         : 5         : N              
+latch_OEN[1]                 : R18       : input  : 2.5 V             :         : 5         : N              
 GXB_GND*                     : T1        :        :                   :         : QL0       :                
 GXB_GND*                     : T2        :        :                   :         : QL0       :                
 GND                          : T3        : gnd    :                   :         :           :                
@@ -357,12 +357,12 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : T9        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : T10       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T11       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T12       :        :                   :         : 4         :                
-io[13]                       : T13       : bidir  : 2.5 V             :         : 4         : N              
-io[14]                       : T14       : bidir  : 2.5 V             :         : 4         : N              
-latch_OEN[0]                 : T15       : input  : 2.5 V             :         : 4         : N              
-io[2]                        : T16       : bidir  : 2.5 V             :         : 4         : N              
-io[6]                        : T17       : bidir  : 2.5 V             :         : 4         : N              
-RAM_GN                       : T18       : input  : 2.5 V             :         : 5         : N              
+RAM_addr[6]                  : T13       : input  : 2.5 V             :         : 4         : N              
+RAM_addr[2]                  : T14       : input  : 2.5 V             :         : 4         : N              
+io[3]                        : T15       : bidir  : 2.5 V             :         : 4         : N              
+io[14]                       : T16       : bidir  : 2.5 V             :         : 4         : N              
+io[11]                       : T17       : bidir  : 2.5 V             :         : 4         : N              
+io[12]                       : T18       : bidir  : 2.5 V             :         : 5         : N              
 GND                          : U1        : gnd    :                   :         :           :                
 GND                          : U2        : gnd    :                   :         :           :                
 NC                           : U3        :        :                   :         :           :                
@@ -380,7 +380,7 @@ GND                          : U14       : gnd    :                   :         
 io[5]                        : U15       : bidir  : 2.5 V             :         : 4         : N              
 io[10]                       : U16       : bidir  : 2.5 V             :         : 4         : N              
 GND                          : U17       : gnd    :                   :         :           :                
-io[11]                       : U18       : bidir  : 2.5 V             :         : 4         : N              
+io[15]                       : U18       : bidir  : 2.5 V             :         : 4         : N              
 RREF                         : V1        :        :                   :         :           :                
 GND                          : V2        : gnd    :                   :         :           :                
 NC                           : V3        :        :                   :         :           :                
@@ -394,8 +394,8 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : V10       :        :                   :      
 latch_clk[0]                 : V11       : input  : 2.5 V             :         : 4         : N              
 ADD_CLKB                     : V12       : input  : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V13       :        :                   :         : 4         :                
-RAM_addr[4]                  : V14       : input  : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : V15       :        :                   :         : 4         :                
-io[15]                       : V16       : bidir  : 2.5 V             :         : 4         : N              
-io[4]                        : V17       : bidir  : 2.5 V             :         : 4         : N              
-io[3]                        : V18       : bidir  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V14       :        :                   :         : 4         :                
+RAM_addr[5]                  : V15       : input  : 2.5 V             :         : 4         : N              
+io[13]                       : V16       : bidir  : 2.5 V             :         : 4         : N              
+io[6]                        : V17       : bidir  : 2.5 V             :         : 4         : N              
+io[4]                        : V18       : bidir  : 2.5 V             :         : 4         : N              
